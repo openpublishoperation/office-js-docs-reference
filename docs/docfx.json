@@ -40,17 +40,12 @@
         ]
       },
       {
-        "files": [
-          "**/*.yml"
-        ],
-        "src": "breadcrumb",
-        "version": "office-js",
-        "dest": "office/breadcrumb",
-        "exclude": [
-          "**/obj/**",
-          "**/includes/**"
-
-        ]
+        "files": ["breadcrumb/toc.yml"]
+      },
+      {
+        "files": ["**/**.md",
+                  "**/**.yml"],
+        "exclude": ["**/obj/**"]
       }
     ],
     "resource": [
@@ -90,7 +85,7 @@
     "overwrite": [],
     "externalReference": [],
     "globalMetadata": {
-      "breadcrumb_path": "/javascript/office/breadcrumb/toc.json",
+      "breadcrumb_path": "/javascript/breadcrumb/toc.json",
       "ms.author": "o365devx",
       "apiPlatform": "javascript",
       "ms.date": "08/15/2018",
