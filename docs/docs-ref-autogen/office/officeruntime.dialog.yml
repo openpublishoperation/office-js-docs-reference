@@ -1,0 +1,23 @@
+### YamlMime:UniversalReference
+items:
+  - uid: office.OfficeRuntime.Dialog
+    name: OfficeRuntime.Dialog
+    fullName: office.OfficeRuntime.Dialog
+    langs:
+      - typeScript
+    type: interface
+    package: office
+    children:
+      - office.OfficeRuntime.Dialog.close
+  - uid: office.OfficeRuntime.Dialog.close
+    name: close()
+    fullName: office.OfficeRuntime.Dialog.close
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'close(): Promise<void>;'
+      return:
+        type:
+          - Promise<void>
+        description: ''

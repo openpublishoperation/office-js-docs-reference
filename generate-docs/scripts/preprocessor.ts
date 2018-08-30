@@ -77,7 +77,10 @@ tryCatch(async () => {
         dtsBuilder.extractDtsSection(definitions, "Begin Office namespace", "End Office namespace") +
         '\n' +
         '\n' +
-        dtsBuilder.extractDtsSection(definitions, "Begin OfficeExtension runtime", "End OfficeExtension runtime")
+        dtsBuilder.extractDtsSection(definitions, "Begin OfficeExtension runtime", "End OfficeExtension runtime") +
+        '\n' +
+        '\n' +
+        dtsBuilder.extractDtsSection(definitions, "Begin OfficeRuntime namespace", "End OfficeRuntime namespace")
     );
 
     console.log("create file: onenote.d.ts");

@@ -1323,3 +1323,11 @@ items:
                 uid: office.OfficeExtension.TrackedObjects
               - name: UpdateOptions
                 uid: office.OfficeExtension.UpdateOptions
+          - name: OfficeRuntime
+            items:
+              - name: AsyncStorage
+                uid: office.OfficeRuntime.AsyncStorage
+              - name: Dialog
+                uid: office.OfficeRuntime.Dialog
+              - name: DisplayWebDialogOptions
+                uid: office.OfficeRuntime.DisplayWebDialogOptions

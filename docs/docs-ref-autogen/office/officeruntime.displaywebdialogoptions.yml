@@ -1,0 +1,126 @@
+### YamlMime:UniversalReference
+items:
+  - uid: office.OfficeRuntime.DisplayWebDialogOptions
+    name: OfficeRuntime.DisplayWebDialogOptions
+    fullName: office.OfficeRuntime.DisplayWebDialogOptions
+    langs:
+      - typeScript
+    type: interface
+    package: office
+    children:
+      - office.OfficeRuntime.DisplayWebDialogOptions.displayInIFrame
+      - office.OfficeRuntime.DisplayWebDialogOptions.height
+      - office.OfficeRuntime.DisplayWebDialogOptions.hideTitle
+      - office.OfficeRuntime.DisplayWebDialogOptions.onClose
+      - office.OfficeRuntime.DisplayWebDialogOptions.onMessage
+      - office.OfficeRuntime.DisplayWebDialogOptions.onRuntimeError
+      - office.OfficeRuntime.DisplayWebDialogOptions.width
+  - uid: office.OfficeRuntime.DisplayWebDialogOptions.displayInIFrame
+    summary: |-
+      True if dialog opens in IFRAME
+
+      \[ [API set: Dialog 1.2](/javascript/office/javascript-api-for-office) \]
+    name: displayInIFrame
+    fullName: office.OfficeRuntime.DisplayWebDialogOptions.displayInIFrame
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'displayInIFrame?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: office.OfficeRuntime.DisplayWebDialogOptions.height
+    summary: |-
+      The height of dialog as a percentage of window
+
+      ex. '50%', '50'
+
+      \[ [API set: Dialog 1.2](/javascript/office/javascript-api-for-office) \]
+    name: height
+    fullName: office.OfficeRuntime.DisplayWebDialogOptions.height
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'height?: string;'
+      return:
+        type:
+          - string
+  - uid: office.OfficeRuntime.DisplayWebDialogOptions.hideTitle
+    summary: |-
+      True if title is hidden
+
+      \[ [API set: Dialog 1.2](/javascript/office/javascript-api-for-office) \]
+    name: hideTitle
+    fullName: office.OfficeRuntime.DisplayWebDialogOptions.hideTitle
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'hideTitle?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: office.OfficeRuntime.DisplayWebDialogOptions.onClose
+    summary: |-
+      Callback that is run when the dialog is closed
+
+      \[ [API set: Dialog 1.X](/javascript/office/javascript-api-for-office) \]
+    name: onClose
+    fullName: office.OfficeRuntime.DisplayWebDialogOptions.onClose
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'onClose?: () => void;'
+      return:
+        type:
+          - () => void
+  - uid: office.OfficeRuntime.DisplayWebDialogOptions.onMessage
+    summary: |-
+      Callback that is run when the dialog sends a message to its parent
+
+      \[ [API set: Dialog 1.X](/javascript/office/javascript-api-for-office) \]
+    name: onMessage
+    fullName: office.OfficeRuntime.DisplayWebDialogOptions.onMessage
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'onMessage?: (message: string, dialog?: Dialog) => void;'
+      return:
+        type:
+          - '(message: string, dialog?: Dialog) => void'
+  - uid: office.OfficeRuntime.DisplayWebDialogOptions.onRuntimeError
+    summary: |-
+      Callback that is run when the dialog sends an error
+
+      \[ [API set: Dialog 1.X](/javascript/office/javascript-api-for-office) \]
+    name: onRuntimeError
+    fullName: office.OfficeRuntime.DisplayWebDialogOptions.onRuntimeError
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'onRuntimeError?: (error: Error, dialog?: Dialog) => void;'
+      return:
+        type:
+          - '(error: Error, dialog?: Dialog) => void'
+  - uid: office.OfficeRuntime.DisplayWebDialogOptions.width
+    summary: |-
+      The width of dialog as a percentage of window
+
+      ex. '50%', '50'
+
+      \[ [API set: Dialog 1.2](/javascript/office/javascript-api-for-office) \]
+    name: width
+    fullName: office.OfficeRuntime.DisplayWebDialogOptions.width
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'width?: string;'
+      return:
+        type:
+          - string
