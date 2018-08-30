@@ -396,6 +396,10 @@ items:
       In addition to this signature, this method has the following signatures:
 
 
+      `load(option?: string | string[]): OneNote.Table` - Where option is a comma-delimited string or an array of
+      strings that specify the properties/relationships to load.
+
+
       `load(option?: { select?: string; expand?: string; }): OneNote.Table` - Where option.select is a comma-delimited
       string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that
       specifies the relationships to load.
@@ -497,7 +501,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: string | string[]): OneNote.Table;'
+      content: 'load(option?: OneNote.Interfaces.TableLoadOptions): OneNote.Table;'
       return:
         type:
           - OneNote.Table
@@ -506,7 +510,7 @@ items:
         - id: option
           description: A comma-delimited string or an array of strings that specify the properties/relationships to load.
           type:
-            - 'string | string[]'
+            - OneNote.Interfaces.TableLoadOptions
   - uid: onenote.OneNote.Table.paragraph
     summary: |-
       Gets the Paragraph object that contains the Table object. Read-only.

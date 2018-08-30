@@ -94,6 +94,10 @@ items:
       In addition to this signature, this method has the following signatures:
 
 
+      `load(option?: string | string[]): Excel.DataBarConditionalFormat` - Where option is a comma-delimited string or
+      an array of strings that specify the properties/relationships to load.
+
+
       `load(option?: { select?: string; expand?: string; }): Excel.DataBarConditionalFormat` - Where option.select is a
       comma-delimited string that specifies the properties/relationships to load, and options.expand is a
       comma-delimited string that specifies the relationships to load.
@@ -110,7 +114,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: string | string[]): Excel.DataBarConditionalFormat;'
+      content: 'load(option?: Excel.Interfaces.DataBarConditionalFormatLoadOptions): Excel.DataBarConditionalFormat;'
       return:
         type:
           - excel.Excel.DataBarConditionalFormat
@@ -119,7 +123,7 @@ items:
         - id: option
           description: A comma-delimited string or an array of strings that specify the properties/relationships to load.
           type:
-            - 'string | string[]'
+            - Excel.Interfaces.DataBarConditionalFormatLoadOptions
   - uid: excel.Excel.DataBarConditionalFormat.lowerBoundRule
     summary: |-
       The rule for what consistutes the lower bound (and how to calculate it, if applicable) for a data bar.

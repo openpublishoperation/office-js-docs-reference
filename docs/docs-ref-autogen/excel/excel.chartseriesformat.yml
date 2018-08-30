@@ -56,6 +56,10 @@ items:
       In addition to this signature, this method has the following signatures:
 
 
+      `load(option?: string | string[]): Excel.ChartSeriesFormat` - Where option is a comma-delimited string or an array
+      of strings that specify the properties/relationships to load.
+
+
       `load(option?: { select?: string; expand?: string; }): Excel.ChartSeriesFormat` - Where option.select is a
       comma-delimited string that specifies the properties/relationships to load, and options.expand is a
       comma-delimited string that specifies the relationships to load.
@@ -72,7 +76,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: string | string[]): Excel.ChartSeriesFormat;'
+      content: 'load(option?: Excel.Interfaces.ChartSeriesFormatLoadOptions): Excel.ChartSeriesFormat;'
       return:
         type:
           - excel.Excel.ChartSeriesFormat
@@ -81,7 +85,7 @@ items:
         - id: option
           description: A comma-delimited string or an array of strings that specify the properties/relationships to load.
           type:
-            - 'string | string[]'
+            - Excel.Interfaces.ChartSeriesFormatLoadOptions
   - uid: excel.Excel.ChartSeriesFormat.toJSON
     name: toJSON()
     fullName: excel.Excel.ChartSeriesFormat.toJSON

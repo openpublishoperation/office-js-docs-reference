@@ -115,11 +115,15 @@ export declare namespace OneNote {
          *
          * In addition to this signature, this method has the following signatures:
          *
+         * `load(option?: string | string[]): OneNote.Application` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load.
+         *
          * `load(option?: { select?: string; expand?: string; }): OneNote.Application` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): OneNote.Application` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
          * @param option - A comma-delimited string or an array of strings that specify the properties/relationships to load.
          */
+
+        load(option?: OneNote.Interfaces.ApplicationLoadOptions): OneNote.Application;
         load(option?: string | string[]): OneNote.Application;
         load(option?: {
             select?: string;
@@ -156,11 +160,15 @@ export declare namespace OneNote {
          *
          * In addition to this signature, this method has the following signatures:
          *
+         * `load(option?: string | string[]): OneNote.InkAnalysis` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load.
+         *
          * `load(option?: { select?: string; expand?: string; }): OneNote.InkAnalysis` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): OneNote.InkAnalysis` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
          * @param option - A comma-delimited string or an array of strings that specify the properties/relationships to load.
          */
+
+        load(option?: OneNote.Interfaces.InkAnalysisLoadOptions): OneNote.InkAnalysis;
         load(option?: string | string[]): OneNote.InkAnalysis;
         load(option?: {
             select?: string;
@@ -212,11 +220,15 @@ export declare namespace OneNote {
          *
          * In addition to this signature, this method has the following signatures:
          *
+         * `load(option?: string | string[]): OneNote.InkAnalysisParagraph` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load.
+         *
          * `load(option?: { select?: string; expand?: string; }): OneNote.InkAnalysisParagraph` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): OneNote.InkAnalysisParagraph` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
          * @param option - A comma-delimited string or an array of strings that specify the properties/relationships to load.
          */
+
+        load(option?: OneNote.Interfaces.InkAnalysisParagraphLoadOptions): OneNote.InkAnalysisParagraph;
         load(option?: string | string[]): OneNote.InkAnalysisParagraph;
         load(option?: {
             select?: string;
@@ -273,11 +285,15 @@ export declare namespace OneNote {
          *
          * In addition to this signature, this method has the following signatures:
          *
+         * `load(option?: string | string[]): OneNote.InkAnalysisParagraphCollection` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load.
+         *
          * `load(option?: { select?: string; expand?: string; }): OneNote.InkAnalysisParagraphCollection` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): OneNote.InkAnalysisParagraphCollection` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
          * @param option - A comma-delimited string or an array of strings that specify the properties/relationships to load.
          */
+
+        load(option?: OneNote.Interfaces.InkAnalysisParagraphCollectionLoadOptions & OneNote.Interfaces.CollectionLoadOptions): OneNote.InkAnalysisParagraphCollection;
         load(option?: string | string[]): OneNote.InkAnalysisParagraphCollection;
         load(option?: OfficeExtension.LoadOption): OneNote.InkAnalysisParagraphCollection;
         /**
@@ -326,11 +342,15 @@ export declare namespace OneNote {
          *
          * In addition to this signature, this method has the following signatures:
          *
+         * `load(option?: string | string[]): OneNote.InkAnalysisLine` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load.
+         *
          * `load(option?: { select?: string; expand?: string; }): OneNote.InkAnalysisLine` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): OneNote.InkAnalysisLine` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
          * @param option - A comma-delimited string or an array of strings that specify the properties/relationships to load.
          */
+
+        load(option?: OneNote.Interfaces.InkAnalysisLineLoadOptions): OneNote.InkAnalysisLine;
         load(option?: string | string[]): OneNote.InkAnalysisLine;
         load(option?: {
             select?: string;
@@ -387,11 +407,15 @@ export declare namespace OneNote {
          *
          * In addition to this signature, this method has the following signatures:
          *
+         * `load(option?: string | string[]): OneNote.InkAnalysisLineCollection` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load.
+         *
          * `load(option?: { select?: string; expand?: string; }): OneNote.InkAnalysisLineCollection` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): OneNote.InkAnalysisLineCollection` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
          * @param option - A comma-delimited string or an array of strings that specify the properties/relationships to load.
          */
+
+        load(option?: OneNote.Interfaces.InkAnalysisLineCollectionLoadOptions & OneNote.Interfaces.CollectionLoadOptions): OneNote.InkAnalysisLineCollection;
         load(option?: string | string[]): OneNote.InkAnalysisLineCollection;
         load(option?: OfficeExtension.LoadOption): OneNote.InkAnalysisLineCollection;
         /**
@@ -454,11 +478,15 @@ export declare namespace OneNote {
          *
          * In addition to this signature, this method has the following signatures:
          *
+         * `load(option?: string | string[]): OneNote.InkAnalysisWord` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load.
+         *
          * `load(option?: { select?: string; expand?: string; }): OneNote.InkAnalysisWord` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): OneNote.InkAnalysisWord` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
          * @param option - A comma-delimited string or an array of strings that specify the properties/relationships to load.
          */
+
+        load(option?: OneNote.Interfaces.InkAnalysisWordLoadOptions): OneNote.InkAnalysisWord;
         load(option?: string | string[]): OneNote.InkAnalysisWord;
         load(option?: {
             select?: string;
@@ -515,11 +543,15 @@ export declare namespace OneNote {
          *
          * In addition to this signature, this method has the following signatures:
          *
+         * `load(option?: string | string[]): OneNote.InkAnalysisWordCollection` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load.
+         *
          * `load(option?: { select?: string; expand?: string; }): OneNote.InkAnalysisWordCollection` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): OneNote.InkAnalysisWordCollection` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
          * @param option - A comma-delimited string or an array of strings that specify the properties/relationships to load.
          */
+
+        load(option?: OneNote.Interfaces.InkAnalysisWordCollectionLoadOptions & OneNote.Interfaces.CollectionLoadOptions): OneNote.InkAnalysisWordCollection;
         load(option?: string | string[]): OneNote.InkAnalysisWordCollection;
         load(option?: OfficeExtension.LoadOption): OneNote.InkAnalysisWordCollection;
         /**
@@ -567,11 +599,15 @@ export declare namespace OneNote {
          *
          * In addition to this signature, this method has the following signatures:
          *
+         * `load(option?: string | string[]): OneNote.FloatingInk` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load.
+         *
          * `load(option?: { select?: string; expand?: string; }): OneNote.FloatingInk` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): OneNote.FloatingInk` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
          * @param option - A comma-delimited string or an array of strings that specify the properties/relationships to load.
          */
+
+        load(option?: OneNote.Interfaces.FloatingInkLoadOptions): OneNote.FloatingInk;
         load(option?: string | string[]): OneNote.FloatingInk;
         load(option?: {
             select?: string;
@@ -615,11 +651,15 @@ export declare namespace OneNote {
          *
          * In addition to this signature, this method has the following signatures:
          *
+         * `load(option?: string | string[]): OneNote.InkStroke` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load.
+         *
          * `load(option?: { select?: string; expand?: string; }): OneNote.InkStroke` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): OneNote.InkStroke` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
          * @param option - A comma-delimited string or an array of strings that specify the properties/relationships to load.
          */
+
+        load(option?: OneNote.Interfaces.InkStrokeLoadOptions): OneNote.InkStroke;
         load(option?: string | string[]): OneNote.InkStroke;
         load(option?: {
             select?: string;
@@ -676,11 +716,15 @@ export declare namespace OneNote {
          *
          * In addition to this signature, this method has the following signatures:
          *
+         * `load(option?: string | string[]): OneNote.InkStrokeCollection` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load.
+         *
          * `load(option?: { select?: string; expand?: string; }): OneNote.InkStrokeCollection` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): OneNote.InkStrokeCollection` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
          * @param option - A comma-delimited string or an array of strings that specify the properties/relationships to load.
          */
+
+        load(option?: OneNote.Interfaces.InkStrokeCollectionLoadOptions & OneNote.Interfaces.CollectionLoadOptions): OneNote.InkStrokeCollection;
         load(option?: string | string[]): OneNote.InkStrokeCollection;
         load(option?: OfficeExtension.LoadOption): OneNote.InkStrokeCollection;
         /**
@@ -735,11 +779,15 @@ export declare namespace OneNote {
          *
          * In addition to this signature, this method has the following signatures:
          *
+         * `load(option?: string | string[]): OneNote.InkWord` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load.
+         *
          * `load(option?: { select?: string; expand?: string; }): OneNote.InkWord` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): OneNote.InkWord` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
          * @param option - A comma-delimited string or an array of strings that specify the properties/relationships to load.
          */
+
+        load(option?: OneNote.Interfaces.InkWordLoadOptions): OneNote.InkWord;
         load(option?: string | string[]): OneNote.InkWord;
         load(option?: {
             select?: string;
@@ -796,11 +844,15 @@ export declare namespace OneNote {
          *
          * In addition to this signature, this method has the following signatures:
          *
+         * `load(option?: string | string[]): OneNote.InkWordCollection` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load.
+         *
          * `load(option?: { select?: string; expand?: string; }): OneNote.InkWordCollection` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): OneNote.InkWordCollection` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
          * @param option - A comma-delimited string or an array of strings that specify the properties/relationships to load.
          */
+
+        load(option?: OneNote.Interfaces.InkWordCollectionLoadOptions & OneNote.Interfaces.CollectionLoadOptions): OneNote.InkWordCollection;
         load(option?: string | string[]): OneNote.InkWordCollection;
         load(option?: OfficeExtension.LoadOption): OneNote.InkWordCollection;
         /**
@@ -901,11 +953,15 @@ export declare namespace OneNote {
          *
          * In addition to this signature, this method has the following signatures:
          *
+         * `load(option?: string | string[]): OneNote.Notebook` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load.
+         *
          * `load(option?: { select?: string; expand?: string; }): OneNote.Notebook` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): OneNote.Notebook` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
          * @param option - A comma-delimited string or an array of strings that specify the properties/relationships to load.
          */
+
+        load(option?: OneNote.Interfaces.NotebookLoadOptions): OneNote.Notebook;
         load(option?: string | string[]): OneNote.Notebook;
         load(option?: {
             select?: string;
@@ -971,11 +1027,15 @@ export declare namespace OneNote {
          *
          * In addition to this signature, this method has the following signatures:
          *
+         * `load(option?: string | string[]): OneNote.NotebookCollection` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load.
+         *
          * `load(option?: { select?: string; expand?: string; }): OneNote.NotebookCollection` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): OneNote.NotebookCollection` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
          * @param option - A comma-delimited string or an array of strings that specify the properties/relationships to load.
          */
+
+        load(option?: OneNote.Interfaces.NotebookCollectionLoadOptions & OneNote.Interfaces.CollectionLoadOptions): OneNote.NotebookCollection;
         load(option?: string | string[]): OneNote.NotebookCollection;
         load(option?: OfficeExtension.LoadOption): OneNote.NotebookCollection;
         /**
@@ -1083,11 +1143,15 @@ export declare namespace OneNote {
          *
          * In addition to this signature, this method has the following signatures:
          *
+         * `load(option?: string | string[]): OneNote.SectionGroup` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load.
+         *
          * `load(option?: { select?: string; expand?: string; }): OneNote.SectionGroup` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): OneNote.SectionGroup` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
          * @param option - A comma-delimited string or an array of strings that specify the properties/relationships to load.
          */
+
+        load(option?: OneNote.Interfaces.SectionGroupLoadOptions): OneNote.SectionGroup;
         load(option?: string | string[]): OneNote.SectionGroup;
         load(option?: {
             select?: string;
@@ -1153,11 +1217,15 @@ export declare namespace OneNote {
          *
          * In addition to this signature, this method has the following signatures:
          *
+         * `load(option?: string | string[]): OneNote.SectionGroupCollection` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load.
+         *
          * `load(option?: { select?: string; expand?: string; }): OneNote.SectionGroupCollection` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): OneNote.SectionGroupCollection` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
          * @param option - A comma-delimited string or an array of strings that specify the properties/relationships to load.
          */
+
+        load(option?: OneNote.Interfaces.SectionGroupCollectionLoadOptions & OneNote.Interfaces.CollectionLoadOptions): OneNote.SectionGroupCollection;
         load(option?: string | string[]): OneNote.SectionGroupCollection;
         load(option?: OfficeExtension.LoadOption): OneNote.SectionGroupCollection;
         /**
@@ -1308,11 +1376,15 @@ export declare namespace OneNote {
          *
          * In addition to this signature, this method has the following signatures:
          *
+         * `load(option?: string | string[]): OneNote.Section` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load.
+         *
          * `load(option?: { select?: string; expand?: string; }): OneNote.Section` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): OneNote.Section` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
          * @param option - A comma-delimited string or an array of strings that specify the properties/relationships to load.
          */
+
+        load(option?: OneNote.Interfaces.SectionLoadOptions): OneNote.Section;
         load(option?: string | string[]): OneNote.Section;
         load(option?: {
             select?: string;
@@ -1378,11 +1450,15 @@ export declare namespace OneNote {
          *
          * In addition to this signature, this method has the following signatures:
          *
+         * `load(option?: string | string[]): OneNote.SectionCollection` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load.
+         *
          * `load(option?: { select?: string; expand?: string; }): OneNote.SectionCollection` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): OneNote.SectionCollection` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
          * @param option - A comma-delimited string or an array of strings that specify the properties/relationships to load.
          */
+
+        load(option?: OneNote.Interfaces.SectionCollectionLoadOptions & OneNote.Interfaces.CollectionLoadOptions): OneNote.SectionCollection;
         load(option?: string | string[]): OneNote.SectionCollection;
         load(option?: OfficeExtension.LoadOption): OneNote.SectionCollection;
         /**
@@ -1550,11 +1626,15 @@ export declare namespace OneNote {
          *
          * In addition to this signature, this method has the following signatures:
          *
+         * `load(option?: string | string[]): OneNote.Page` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load.
+         *
          * `load(option?: { select?: string; expand?: string; }): OneNote.Page` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): OneNote.Page` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
          * @param option - A comma-delimited string or an array of strings that specify the properties/relationships to load.
          */
+
+        load(option?: OneNote.Interfaces.PageLoadOptions): OneNote.Page;
         load(option?: string | string[]): OneNote.Page;
         load(option?: {
             select?: string;
@@ -1620,11 +1700,15 @@ export declare namespace OneNote {
          *
          * In addition to this signature, this method has the following signatures:
          *
+         * `load(option?: string | string[]): OneNote.PageCollection` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load.
+         *
          * `load(option?: { select?: string; expand?: string; }): OneNote.PageCollection` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): OneNote.PageCollection` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
          * @param option - A comma-delimited string or an array of strings that specify the properties/relationships to load.
          */
+
+        load(option?: OneNote.Interfaces.PageCollectionLoadOptions & OneNote.Interfaces.CollectionLoadOptions): OneNote.PageCollection;
         load(option?: string | string[]): OneNote.PageCollection;
         load(option?: OfficeExtension.LoadOption): OneNote.PageCollection;
         /**
@@ -1715,11 +1799,15 @@ export declare namespace OneNote {
          *
          * In addition to this signature, this method has the following signatures:
          *
+         * `load(option?: string | string[]): OneNote.PageContent` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load.
+         *
          * `load(option?: { select?: string; expand?: string; }): OneNote.PageContent` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): OneNote.PageContent` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
          * @param option - A comma-delimited string or an array of strings that specify the properties/relationships to load.
          */
+
+        load(option?: OneNote.Interfaces.PageContentLoadOptions): OneNote.PageContent;
         load(option?: string | string[]): OneNote.PageContent;
         load(option?: {
             select?: string;
@@ -1776,11 +1864,15 @@ export declare namespace OneNote {
          *
          * In addition to this signature, this method has the following signatures:
          *
+         * `load(option?: string | string[]): OneNote.PageContentCollection` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load.
+         *
          * `load(option?: { select?: string; expand?: string; }): OneNote.PageContentCollection` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): OneNote.PageContentCollection` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
          * @param option - A comma-delimited string or an array of strings that specify the properties/relationships to load.
          */
+
+        load(option?: OneNote.Interfaces.PageContentCollectionLoadOptions & OneNote.Interfaces.CollectionLoadOptions): OneNote.PageContentCollection;
         load(option?: string | string[]): OneNote.PageContentCollection;
         load(option?: OfficeExtension.LoadOption): OneNote.PageContentCollection;
         /**
@@ -1875,11 +1967,15 @@ export declare namespace OneNote {
          *
          * In addition to this signature, this method has the following signatures:
          *
+         * `load(option?: string | string[]): OneNote.Outline` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load.
+         *
          * `load(option?: { select?: string; expand?: string; }): OneNote.Outline` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): OneNote.Outline` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
          * @param option - A comma-delimited string or an array of strings that specify the properties/relationships to load.
          */
+
+        load(option?: OneNote.Interfaces.OutlineLoadOptions): OneNote.Outline;
         load(option?: string | string[]): OneNote.Outline;
         load(option?: {
             select?: string;
@@ -2116,11 +2212,15 @@ export declare namespace OneNote {
          *
          * In addition to this signature, this method has the following signatures:
          *
+         * `load(option?: string | string[]): OneNote.Paragraph` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load.
+         *
          * `load(option?: { select?: string; expand?: string; }): OneNote.Paragraph` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): OneNote.Paragraph` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
          * @param option - A comma-delimited string or an array of strings that specify the properties/relationships to load.
          */
+
+        load(option?: OneNote.Interfaces.ParagraphLoadOptions): OneNote.Paragraph;
         load(option?: string | string[]): OneNote.Paragraph;
         load(option?: {
             select?: string;
@@ -2177,11 +2277,15 @@ export declare namespace OneNote {
          *
          * In addition to this signature, this method has the following signatures:
          *
+         * `load(option?: string | string[]): OneNote.ParagraphCollection` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load.
+         *
          * `load(option?: { select?: string; expand?: string; }): OneNote.ParagraphCollection` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): OneNote.ParagraphCollection` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
          * @param option - A comma-delimited string or an array of strings that specify the properties/relationships to load.
          */
+
+        load(option?: OneNote.Interfaces.ParagraphCollectionLoadOptions & OneNote.Interfaces.CollectionLoadOptions): OneNote.ParagraphCollection;
         load(option?: string | string[]): OneNote.ParagraphCollection;
         load(option?: OfficeExtension.LoadOption): OneNote.ParagraphCollection;
         /**
@@ -2229,11 +2333,15 @@ export declare namespace OneNote {
          *
          * In addition to this signature, this method has the following signatures:
          *
+         * `load(option?: string | string[]): OneNote.NoteTag` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load.
+         *
          * `load(option?: { select?: string; expand?: string; }): OneNote.NoteTag` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): OneNote.NoteTag` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
          * @param option - A comma-delimited string or an array of strings that specify the properties/relationships to load.
          */
+
+        load(option?: OneNote.Interfaces.NoteTagLoadOptions): OneNote.NoteTag;
         load(option?: string | string[]): OneNote.NoteTag;
         load(option?: {
             select?: string;
@@ -2299,11 +2407,15 @@ export declare namespace OneNote {
          *
          * In addition to this signature, this method has the following signatures:
          *
+         * `load(option?: string | string[]): OneNote.RichText` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load.
+         *
          * `load(option?: { select?: string; expand?: string; }): OneNote.RichText` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): OneNote.RichText` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
          * @param option - A comma-delimited string or an array of strings that specify the properties/relationships to load.
          */
+
+        load(option?: OneNote.Interfaces.RichTextLoadOptions): OneNote.RichText;
         load(option?: string | string[]): OneNote.RichText;
         load(option?: {
             select?: string;
@@ -2398,11 +2510,15 @@ export declare namespace OneNote {
          *
          * In addition to this signature, this method has the following signatures:
          *
+         * `load(option?: string | string[]): OneNote.Image` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load.
+         *
          * `load(option?: { select?: string; expand?: string; }): OneNote.Image` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): OneNote.Image` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
          * @param option - A comma-delimited string or an array of strings that specify the properties/relationships to load.
          */
+
+        load(option?: OneNote.Interfaces.ImageLoadOptions): OneNote.Image;
         load(option?: string | string[]): OneNote.Image;
         load(option?: {
             select?: string;
@@ -2538,11 +2654,15 @@ export declare namespace OneNote {
          *
          * In addition to this signature, this method has the following signatures:
          *
+         * `load(option?: string | string[]): OneNote.Table` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load.
+         *
          * `load(option?: { select?: string; expand?: string; }): OneNote.Table` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): OneNote.Table` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
          * @param option - A comma-delimited string or an array of strings that specify the properties/relationships to load.
          */
+
+        load(option?: OneNote.Interfaces.TableLoadOptions): OneNote.Table;
         load(option?: string | string[]): OneNote.Table;
         load(option?: {
             select?: string;
@@ -2642,11 +2762,15 @@ export declare namespace OneNote {
          *
          * In addition to this signature, this method has the following signatures:
          *
+         * `load(option?: string | string[]): OneNote.TableRow` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load.
+         *
          * `load(option?: { select?: string; expand?: string; }): OneNote.TableRow` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): OneNote.TableRow` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
          * @param option - A comma-delimited string or an array of strings that specify the properties/relationships to load.
          */
+
+        load(option?: OneNote.Interfaces.TableRowLoadOptions): OneNote.TableRow;
         load(option?: string | string[]): OneNote.TableRow;
         load(option?: {
             select?: string;
@@ -2703,11 +2827,15 @@ export declare namespace OneNote {
          *
          * In addition to this signature, this method has the following signatures:
          *
+         * `load(option?: string | string[]): OneNote.TableRowCollection` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load.
+         *
          * `load(option?: { select?: string; expand?: string; }): OneNote.TableRowCollection` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): OneNote.TableRowCollection` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
          * @param option - A comma-delimited string or an array of strings that specify the properties/relationships to load.
          */
+
+        load(option?: OneNote.Interfaces.TableRowCollectionLoadOptions & OneNote.Interfaces.CollectionLoadOptions): OneNote.TableRowCollection;
         load(option?: string | string[]): OneNote.TableRowCollection;
         load(option?: OfficeExtension.LoadOption): OneNote.TableRowCollection;
         /**
@@ -2824,11 +2952,15 @@ export declare namespace OneNote {
          *
          * In addition to this signature, this method has the following signatures:
          *
+         * `load(option?: string | string[]): OneNote.TableCell` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load.
+         *
          * `load(option?: { select?: string; expand?: string; }): OneNote.TableCell` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): OneNote.TableCell` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
          * @param option - A comma-delimited string or an array of strings that specify the properties/relationships to load.
          */
+
+        load(option?: OneNote.Interfaces.TableCellLoadOptions): OneNote.TableCell;
         load(option?: string | string[]): OneNote.TableCell;
         load(option?: {
             select?: string;
@@ -2885,11 +3017,15 @@ export declare namespace OneNote {
          *
          * In addition to this signature, this method has the following signatures:
          *
+         * `load(option?: string | string[]): OneNote.TableCellCollection` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load.
+         *
          * `load(option?: { select?: string; expand?: string; }): OneNote.TableCellCollection` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): OneNote.TableCellCollection` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
          * @param option - A comma-delimited string or an array of strings that specify the properties/relationships to load.
          */
+
+        load(option?: OneNote.Interfaces.TableCellCollectionLoadOptions & OneNote.Interfaces.CollectionLoadOptions): OneNote.TableCellCollection;
         load(option?: string | string[]): OneNote.TableCellCollection;
         load(option?: OfficeExtension.LoadOption): OneNote.TableCellCollection;
         /**

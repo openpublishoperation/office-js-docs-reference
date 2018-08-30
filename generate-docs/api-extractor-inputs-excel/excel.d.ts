@@ -676,11 +676,15 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
+         * `load(option?: string | string[]): Excel.Application` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load.
+         *
          * `load(option?: { select?: string; expand?: string; }): Excel.Application` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.Application` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
          * @param option - A comma-delimited string or an array of strings that specify the properties/relationships to load.
          */
+
+        load(option?: Excel.Interfaces.ApplicationLoadOptions): Excel.Application;
         load(option?: string | string[]): Excel.Application;
         load(option?: {
             select?: string;
@@ -815,11 +819,15 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
+         * `load(option?: string | string[]): Excel.Workbook` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load.
+         *
          * `load(option?: { select?: string; expand?: string; }): Excel.Workbook` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.Workbook` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
          * @param option - A comma-delimited string or an array of strings that specify the properties/relationships to load.
          */
+
+        load(option?: Excel.Interfaces.WorkbookLoadOptions): Excel.Workbook;
         load(option?: string | string[]): Excel.Workbook;
         load(option?: {
             select?: string;
@@ -875,11 +883,15 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
+         * `load(option?: string | string[]): Excel.WorkbookProtection` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load.
+         *
          * `load(option?: { select?: string; expand?: string; }): Excel.WorkbookProtection` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.WorkbookProtection` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
          * @param option - A comma-delimited string or an array of strings that specify the properties/relationships to load.
          */
+
+        load(option?: Excel.Interfaces.WorkbookProtectionLoadOptions): Excel.WorkbookProtection;
         load(option?: string | string[]): Excel.WorkbookProtection;
         load(option?: {
             select?: string;
@@ -1124,11 +1136,15 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
+         * `load(option?: string | string[]): Excel.Worksheet` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load.
+         *
          * `load(option?: { select?: string; expand?: string; }): Excel.Worksheet` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.Worksheet` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
          * @param option - A comma-delimited string or an array of strings that specify the properties/relationships to load.
          */
+
+        load(option?: Excel.Interfaces.WorksheetLoadOptions): Excel.Worksheet;
         load(option?: string | string[]): Excel.Worksheet;
         load(option?: {
             select?: string;
@@ -1249,11 +1265,15 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
+         * `load(option?: string | string[]): Excel.WorksheetCollection` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load.
+         *
          * `load(option?: { select?: string; expand?: string; }): Excel.WorksheetCollection` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.WorksheetCollection` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
          * @param option - A comma-delimited string or an array of strings that specify the properties/relationships to load.
          */
+
+        load(option?: Excel.Interfaces.WorksheetCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions): Excel.WorksheetCollection;
         load(option?: string | string[]): Excel.WorksheetCollection;
         load(option?: OfficeExtension.LoadOption): Excel.WorksheetCollection;
         /**
@@ -1341,11 +1361,15 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
+         * `load(option?: string | string[]): Excel.WorksheetProtection` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load.
+         *
          * `load(option?: { select?: string; expand?: string; }): Excel.WorksheetProtection` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.WorksheetProtection` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
          * @param option - A comma-delimited string or an array of strings that specify the properties/relationships to load.
          */
+
+        load(option?: Excel.Interfaces.WorksheetProtectionLoadOptions): Excel.WorksheetProtection;
         load(option?: string | string[]): Excel.WorksheetProtection;
         load(option?: {
             select?: string;
@@ -2010,11 +2034,15 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
+         * `load(option?: string | string[]): Excel.Range` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load.
+         *
          * `load(option?: { select?: string; expand?: string; }): Excel.Range` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.Range` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
          * @param option - A comma-delimited string or an array of strings that specify the properties/relationships to load.
          */
+
+        load(option?: Excel.Interfaces.RangeLoadOptions): Excel.Range;
         load(option?: string | string[]): Excel.Range;
         load(option?: {
             select?: string;
@@ -2187,11 +2215,15 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
+         * `load(option?: string | string[]): Excel.RangeView` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load.
+         *
          * `load(option?: { select?: string; expand?: string; }): Excel.RangeView` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.RangeView` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
          * @param option - A comma-delimited string or an array of strings that specify the properties/relationships to load.
          */
+
+        load(option?: Excel.Interfaces.RangeViewLoadOptions): Excel.RangeView;
         load(option?: string | string[]): Excel.RangeView;
         load(option?: {
             select?: string;
@@ -2231,11 +2263,15 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
+         * `load(option?: string | string[]): Excel.RangeViewCollection` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load.
+         *
          * `load(option?: { select?: string; expand?: string; }): Excel.RangeViewCollection` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.RangeViewCollection` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
          * @param option - A comma-delimited string or an array of strings that specify the properties/relationships to load.
          */
+
+        load(option?: Excel.Interfaces.RangeViewCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions): Excel.RangeViewCollection;
         load(option?: string | string[]): Excel.RangeViewCollection;
         load(option?: OfficeExtension.LoadOption): Excel.RangeViewCollection;
         toJSON(): Excel.Interfaces.RangeViewCollectionData;
@@ -2291,11 +2327,15 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
+         * `load(option?: string | string[]): Excel.SettingCollection` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load.
+         *
          * `load(option?: { select?: string; expand?: string; }): Excel.SettingCollection` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.SettingCollection` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
          * @param option - A comma-delimited string or an array of strings that specify the properties/relationships to load.
          */
+
+        load(option?: Excel.Interfaces.SettingCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions): Excel.SettingCollection;
         load(option?: string | string[]): Excel.SettingCollection;
         load(option?: OfficeExtension.LoadOption): Excel.SettingCollection;
         /**
@@ -2348,11 +2388,15 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
+         * `load(option?: string | string[]): Excel.Setting` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load.
+         *
          * `load(option?: { select?: string; expand?: string; }): Excel.Setting` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.Setting` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
          * @param option - A comma-delimited string or an array of strings that specify the properties/relationships to load.
          */
+
+        load(option?: Excel.Interfaces.SettingLoadOptions): Excel.Setting;
         load(option?: string | string[]): Excel.Setting;
         load(option?: {
             select?: string;
@@ -2425,11 +2469,15 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
+         * `load(option?: string | string[]): Excel.NamedItemCollection` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load.
+         *
          * `load(option?: { select?: string; expand?: string; }): Excel.NamedItemCollection` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.NamedItemCollection` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
          * @param option - A comma-delimited string or an array of strings that specify the properties/relationships to load.
          */
+
+        load(option?: Excel.Interfaces.NamedItemCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions): Excel.NamedItemCollection;
         load(option?: string | string[]): Excel.NamedItemCollection;
         load(option?: OfficeExtension.LoadOption): Excel.NamedItemCollection;
         toJSON(): Excel.Interfaces.NamedItemCollectionData;
@@ -2540,11 +2588,15 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
+         * `load(option?: string | string[]): Excel.NamedItem` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load.
+         *
          * `load(option?: { select?: string; expand?: string; }): Excel.NamedItem` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.NamedItem` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
          * @param option - A comma-delimited string or an array of strings that specify the properties/relationships to load.
          */
+
+        load(option?: Excel.Interfaces.NamedItemLoadOptions): Excel.NamedItem;
         load(option?: string | string[]): Excel.NamedItem;
         load(option?: {
             select?: string;
@@ -2580,11 +2632,15 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
+         * `load(option?: string | string[]): Excel.NamedItemArrayValues` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load.
+         *
          * `load(option?: { select?: string; expand?: string; }): Excel.NamedItemArrayValues` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.NamedItemArrayValues` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
          * @param option - A comma-delimited string or an array of strings that specify the properties/relationships to load.
          */
+
+        load(option?: Excel.Interfaces.NamedItemArrayValuesLoadOptions): Excel.NamedItemArrayValues;
         load(option?: string | string[]): Excel.NamedItemArrayValues;
         load(option?: {
             select?: string;
@@ -2648,11 +2704,15 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
+         * `load(option?: string | string[]): Excel.Binding` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load.
+         *
          * `load(option?: { select?: string; expand?: string; }): Excel.Binding` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.Binding` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
          * @param option - A comma-delimited string or an array of strings that specify the properties/relationships to load.
          */
+
+        load(option?: Excel.Interfaces.BindingLoadOptions): Excel.Binding;
         load(option?: string | string[]): Excel.Binding;
         load(option?: {
             select?: string;
@@ -2803,11 +2863,15 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
+         * `load(option?: string | string[]): Excel.BindingCollection` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load.
+         *
          * `load(option?: { select?: string; expand?: string; }): Excel.BindingCollection` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.BindingCollection` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
          * @param option - A comma-delimited string or an array of strings that specify the properties/relationships to load.
          */
+
+        load(option?: Excel.Interfaces.BindingCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions): Excel.BindingCollection;
         load(option?: string | string[]): Excel.BindingCollection;
         load(option?: OfficeExtension.LoadOption): Excel.BindingCollection;
         toJSON(): Excel.Interfaces.BindingCollectionData;
@@ -2879,11 +2943,15 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
+         * `load(option?: string | string[]): Excel.TableCollection` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load.
+         *
          * `load(option?: { select?: string; expand?: string; }): Excel.TableCollection` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.TableCollection` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
          * @param option - A comma-delimited string or an array of strings that specify the properties/relationships to load.
          */
+
+        load(option?: Excel.Interfaces.TableCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions): Excel.TableCollection;
         load(option?: string | string[]): Excel.TableCollection;
         load(option?: OfficeExtension.LoadOption): Excel.TableCollection;
         /**
@@ -3066,11 +3134,15 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
+         * `load(option?: string | string[]): Excel.Table` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load.
+         *
          * `load(option?: { select?: string; expand?: string; }): Excel.Table` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.Table` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
          * @param option - A comma-delimited string or an array of strings that specify the properties/relationships to load.
          */
+
+        load(option?: Excel.Interfaces.TableLoadOptions): Excel.Table;
         load(option?: string | string[]): Excel.Table;
         load(option?: {
             select?: string;
@@ -3164,11 +3236,15 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
+         * `load(option?: string | string[]): Excel.TableColumnCollection` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load.
+         *
          * `load(option?: { select?: string; expand?: string; }): Excel.TableColumnCollection` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.TableColumnCollection` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
          * @param option - A comma-delimited string or an array of strings that specify the properties/relationships to load.
          */
+
+        load(option?: Excel.Interfaces.TableColumnCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions): Excel.TableColumnCollection;
         load(option?: string | string[]): Excel.TableColumnCollection;
         load(option?: OfficeExtension.LoadOption): Excel.TableColumnCollection;
         toJSON(): Excel.Interfaces.TableColumnCollectionData;
@@ -3258,11 +3334,15 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
+         * `load(option?: string | string[]): Excel.TableColumn` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load.
+         *
          * `load(option?: { select?: string; expand?: string; }): Excel.TableColumn` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.TableColumn` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
          * @param option - A comma-delimited string or an array of strings that specify the properties/relationships to load.
          */
+
+        load(option?: Excel.Interfaces.TableColumnLoadOptions): Excel.TableColumn;
         load(option?: string | string[]): Excel.TableColumn;
         load(option?: {
             select?: string;
@@ -3334,11 +3414,15 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
+         * `load(option?: string | string[]): Excel.TableRowCollection` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load.
+         *
          * `load(option?: { select?: string; expand?: string; }): Excel.TableRowCollection` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.TableRowCollection` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
          * @param option - A comma-delimited string or an array of strings that specify the properties/relationships to load.
          */
+
+        load(option?: Excel.Interfaces.TableRowCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions): Excel.TableRowCollection;
         load(option?: string | string[]): Excel.TableRowCollection;
         load(option?: OfficeExtension.LoadOption): Excel.TableRowCollection;
         toJSON(): Excel.Interfaces.TableRowCollectionData;
@@ -3391,11 +3475,15 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
+         * `load(option?: string | string[]): Excel.TableRow` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load.
+         *
          * `load(option?: { select?: string; expand?: string; }): Excel.TableRow` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.TableRow` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
          * @param option - A comma-delimited string or an array of strings that specify the properties/relationships to load.
          */
+
+        load(option?: Excel.Interfaces.TableRowLoadOptions): Excel.TableRow;
         load(option?: string | string[]): Excel.TableRow;
         load(option?: {
             select?: string;
@@ -3524,11 +3612,15 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
+         * `load(option?: string | string[]): Excel.RangeFormat` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load.
+         *
          * `load(option?: { select?: string; expand?: string; }): Excel.RangeFormat` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.RangeFormat` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
          * @param option - A comma-delimited string or an array of strings that specify the properties/relationships to load.
          */
+
+        load(option?: Excel.Interfaces.RangeFormatLoadOptions): Excel.RangeFormat;
         load(option?: string | string[]): Excel.RangeFormat;
         load(option?: {
             select?: string;
@@ -3565,11 +3657,15 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
+         * `load(option?: string | string[]): Excel.FormatProtection` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load.
+         *
          * `load(option?: { select?: string; expand?: string; }): Excel.FormatProtection` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.FormatProtection` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
          * @param option - A comma-delimited string or an array of strings that specify the properties/relationships to load.
          */
+
+        load(option?: Excel.Interfaces.FormatProtectionLoadOptions): Excel.FormatProtection;
         load(option?: string | string[]): Excel.FormatProtection;
         load(option?: {
             select?: string;
@@ -3606,11 +3702,15 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
+         * `load(option?: string | string[]): Excel.RangeFill` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load.
+         *
          * `load(option?: { select?: string; expand?: string; }): Excel.RangeFill` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.RangeFill` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
          * @param option - A comma-delimited string or an array of strings that specify the properties/relationships to load.
          */
+
+        load(option?: Excel.Interfaces.RangeFillLoadOptions): Excel.RangeFill;
         load(option?: string | string[]): Excel.RangeFill;
         load(option?: {
             select?: string;
@@ -3661,11 +3761,15 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
+         * `load(option?: string | string[]): Excel.RangeBorder` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load.
+         *
          * `load(option?: { select?: string; expand?: string; }): Excel.RangeBorder` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.RangeBorder` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
          * @param option - A comma-delimited string or an array of strings that specify the properties/relationships to load.
          */
+
+        load(option?: Excel.Interfaces.RangeBorderLoadOptions): Excel.RangeBorder;
         load(option?: string | string[]): Excel.RangeBorder;
         load(option?: {
             select?: string;
@@ -3723,11 +3827,15 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
+         * `load(option?: string | string[]): Excel.RangeBorderCollection` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load.
+         *
          * `load(option?: { select?: string; expand?: string; }): Excel.RangeBorderCollection` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.RangeBorderCollection` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
          * @param option - A comma-delimited string or an array of strings that specify the properties/relationships to load.
          */
+
+        load(option?: Excel.Interfaces.RangeBorderCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions): Excel.RangeBorderCollection;
         load(option?: string | string[]): Excel.RangeBorderCollection;
         load(option?: OfficeExtension.LoadOption): Excel.RangeBorderCollection;
         toJSON(): Excel.Interfaces.RangeBorderCollectionData;
@@ -3789,11 +3897,15 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
+         * `load(option?: string | string[]): Excel.RangeFont` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load.
+         *
          * `load(option?: { select?: string; expand?: string; }): Excel.RangeFont` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.RangeFont` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
          * @param option - A comma-delimited string or an array of strings that specify the properties/relationships to load.
          */
+
+        load(option?: Excel.Interfaces.RangeFontLoadOptions): Excel.RangeFont;
         load(option?: string | string[]): Excel.RangeFont;
         load(option?: {
             select?: string;
@@ -3881,11 +3993,15 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
+         * `load(option?: string | string[]): Excel.ChartCollection` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load.
+         *
          * `load(option?: { select?: string; expand?: string; }): Excel.ChartCollection` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.ChartCollection` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
          * @param option - A comma-delimited string or an array of strings that specify the properties/relationships to load.
          */
+
+        load(option?: Excel.Interfaces.ChartCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions): Excel.ChartCollection;
         load(option?: string | string[]): Excel.ChartCollection;
         load(option?: OfficeExtension.LoadOption): Excel.ChartCollection;
         toJSON(): Excel.Interfaces.ChartCollectionData;
@@ -4071,11 +4187,15 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
+         * `load(option?: string | string[]): Excel.Chart` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load.
+         *
          * `load(option?: { select?: string; expand?: string; }): Excel.Chart` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.Chart` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
          * @param option - A comma-delimited string or an array of strings that specify the properties/relationships to load.
          */
+
+        load(option?: Excel.Interfaces.ChartLoadOptions): Excel.Chart;
         load(option?: string | string[]): Excel.Chart;
         load(option?: {
             select?: string;
@@ -4119,11 +4239,15 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
+         * `load(option?: string | string[]): Excel.ChartAreaFormat` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load.
+         *
          * `load(option?: { select?: string; expand?: string; }): Excel.ChartAreaFormat` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.ChartAreaFormat` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
          * @param option - A comma-delimited string or an array of strings that specify the properties/relationships to load.
          */
+
+        load(option?: Excel.Interfaces.ChartAreaFormatLoadOptions): Excel.ChartAreaFormat;
         load(option?: string | string[]): Excel.ChartAreaFormat;
         load(option?: {
             select?: string;
@@ -4180,11 +4304,15 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
+         * `load(option?: string | string[]): Excel.ChartSeriesCollection` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load.
+         *
          * `load(option?: { select?: string; expand?: string; }): Excel.ChartSeriesCollection` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.ChartSeriesCollection` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
          * @param option - A comma-delimited string or an array of strings that specify the properties/relationships to load.
          */
+
+        load(option?: Excel.Interfaces.ChartSeriesCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions): Excel.ChartSeriesCollection;
         load(option?: string | string[]): Excel.ChartSeriesCollection;
         load(option?: OfficeExtension.LoadOption): Excel.ChartSeriesCollection;
         toJSON(): Excel.Interfaces.ChartSeriesCollectionData;
@@ -4352,11 +4480,15 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
+         * `load(option?: string | string[]): Excel.ChartSeries` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load.
+         *
          * `load(option?: { select?: string; expand?: string; }): Excel.ChartSeries` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.ChartSeries` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
          * @param option - A comma-delimited string or an array of strings that specify the properties/relationships to load.
          */
+
+        load(option?: Excel.Interfaces.ChartSeriesLoadOptions): Excel.ChartSeries;
         load(option?: string | string[]): Excel.ChartSeries;
         load(option?: {
             select?: string;
@@ -4393,11 +4525,15 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
+         * `load(option?: string | string[]): Excel.ChartSeriesFormat` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load.
+         *
          * `load(option?: { select?: string; expand?: string; }): Excel.ChartSeriesFormat` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.ChartSeriesFormat` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
          * @param option - A comma-delimited string or an array of strings that specify the properties/relationships to load.
          */
+
+        load(option?: Excel.Interfaces.ChartSeriesFormatLoadOptions): Excel.ChartSeriesFormat;
         load(option?: string | string[]): Excel.ChartSeriesFormat;
         load(option?: {
             select?: string;
@@ -4444,11 +4580,15 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
+         * `load(option?: string | string[]): Excel.ChartPointsCollection` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load.
+         *
          * `load(option?: { select?: string; expand?: string; }): Excel.ChartPointsCollection` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.ChartPointsCollection` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
          * @param option - A comma-delimited string or an array of strings that specify the properties/relationships to load.
          */
+
+        load(option?: Excel.Interfaces.ChartPointsCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions): Excel.ChartPointsCollection;
         load(option?: string | string[]): Excel.ChartPointsCollection;
         load(option?: OfficeExtension.LoadOption): Excel.ChartPointsCollection;
         toJSON(): Excel.Interfaces.ChartPointsCollectionData;
@@ -4524,11 +4664,15 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
+         * `load(option?: string | string[]): Excel.ChartPoint` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load.
+         *
          * `load(option?: { select?: string; expand?: string; }): Excel.ChartPoint` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.ChartPoint` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
          * @param option - A comma-delimited string or an array of strings that specify the properties/relationships to load.
          */
+
+        load(option?: Excel.Interfaces.ChartPointLoadOptions): Excel.ChartPoint;
         load(option?: string | string[]): Excel.ChartPoint;
         load(option?: {
             select?: string;
@@ -4565,11 +4709,15 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
+         * `load(option?: string | string[]): Excel.ChartPointFormat` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load.
+         *
          * `load(option?: { select?: string; expand?: string; }): Excel.ChartPointFormat` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.ChartPointFormat` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
          * @param option - A comma-delimited string or an array of strings that specify the properties/relationships to load.
          */
+
+        load(option?: Excel.Interfaces.ChartPointFormatLoadOptions): Excel.ChartPointFormat;
         load(option?: string | string[]): Excel.ChartPointFormat;
         load(option?: {
             select?: string;
@@ -4633,11 +4781,15 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
+         * `load(option?: string | string[]): Excel.ChartAxes` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load.
+         *
          * `load(option?: { select?: string; expand?: string; }): Excel.ChartAxes` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.ChartAxes` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
          * @param option - A comma-delimited string or an array of strings that specify the properties/relationships to load.
          */
+
+        load(option?: Excel.Interfaces.ChartAxesLoadOptions): Excel.ChartAxes;
         load(option?: string | string[]): Excel.ChartAxes;
         load(option?: {
             select?: string;
@@ -4888,11 +5040,15 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
+         * `load(option?: string | string[]): Excel.ChartAxis` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load.
+         *
          * `load(option?: { select?: string; expand?: string; }): Excel.ChartAxis` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.ChartAxis` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
          * @param option - A comma-delimited string or an array of strings that specify the properties/relationships to load.
          */
+
+        load(option?: Excel.Interfaces.ChartAxisLoadOptions): Excel.ChartAxis;
         load(option?: string | string[]): Excel.ChartAxis;
         load(option?: {
             select?: string;
@@ -4929,11 +5085,15 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
+         * `load(option?: string | string[]): Excel.ChartAxisFormat` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load.
+         *
          * `load(option?: { select?: string; expand?: string; }): Excel.ChartAxisFormat` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.ChartAxisFormat` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
          * @param option - A comma-delimited string or an array of strings that specify the properties/relationships to load.
          */
+
+        load(option?: Excel.Interfaces.ChartAxisFormatLoadOptions): Excel.ChartAxisFormat;
         load(option?: string | string[]): Excel.ChartAxisFormat;
         load(option?: {
             select?: string;
@@ -4977,11 +5137,15 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
+         * `load(option?: string | string[]): Excel.ChartAxisTitle` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load.
+         *
          * `load(option?: { select?: string; expand?: string; }): Excel.ChartAxisTitle` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.ChartAxisTitle` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
          * @param option - A comma-delimited string or an array of strings that specify the properties/relationships to load.
          */
+
+        load(option?: Excel.Interfaces.ChartAxisTitleLoadOptions): Excel.ChartAxisTitle;
         load(option?: string | string[]): Excel.ChartAxisTitle;
         load(option?: {
             select?: string;
@@ -5011,11 +5175,15 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
+         * `load(option?: string | string[]): Excel.ChartAxisTitleFormat` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load.
+         *
          * `load(option?: { select?: string; expand?: string; }): Excel.ChartAxisTitleFormat` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.ChartAxisTitleFormat` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
          * @param option - A comma-delimited string or an array of strings that specify the properties/relationships to load.
          */
+
+        load(option?: Excel.Interfaces.ChartAxisTitleFormatLoadOptions): Excel.ChartAxisTitleFormat;
         load(option?: string | string[]): Excel.ChartAxisTitleFormat;
         load(option?: {
             select?: string;
@@ -5101,11 +5269,15 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
+         * `load(option?: string | string[]): Excel.ChartDataLabels` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load.
+         *
          * `load(option?: { select?: string; expand?: string; }): Excel.ChartDataLabels` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.ChartDataLabels` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
          * @param option - A comma-delimited string or an array of strings that specify the properties/relationships to load.
          */
+
+        load(option?: Excel.Interfaces.ChartDataLabelsLoadOptions): Excel.ChartDataLabels;
         load(option?: string | string[]): Excel.ChartDataLabels;
         load(option?: {
             select?: string;
@@ -5184,11 +5356,15 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
+         * `load(option?: string | string[]): Excel.ChartDataLabel` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load.
+         *
          * `load(option?: { select?: string; expand?: string; }): Excel.ChartDataLabel` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.ChartDataLabel` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
          * @param option - A comma-delimited string or an array of strings that specify the properties/relationships to load.
          */
+
+        load(option?: Excel.Interfaces.ChartDataLabelLoadOptions): Excel.ChartDataLabel;
         load(option?: string | string[]): Excel.ChartDataLabel;
         load(option?: {
             select?: string;
@@ -5225,11 +5401,15 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
+         * `load(option?: string | string[]): Excel.ChartDataLabelFormat` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load.
+         *
          * `load(option?: { select?: string; expand?: string; }): Excel.ChartDataLabelFormat` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.ChartDataLabelFormat` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
          * @param option - A comma-delimited string or an array of strings that specify the properties/relationships to load.
          */
+
+        load(option?: Excel.Interfaces.ChartDataLabelFormatLoadOptions): Excel.ChartDataLabelFormat;
         load(option?: string | string[]): Excel.ChartDataLabelFormat;
         load(option?: {
             select?: string;
@@ -5266,11 +5446,15 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
+         * `load(option?: string | string[]): Excel.ChartGridlines` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load.
+         *
          * `load(option?: { select?: string; expand?: string; }): Excel.ChartGridlines` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.ChartGridlines` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
          * @param option - A comma-delimited string or an array of strings that specify the properties/relationships to load.
          */
+
+        load(option?: Excel.Interfaces.ChartGridlinesLoadOptions): Excel.ChartGridlines;
         load(option?: string | string[]): Excel.ChartGridlines;
         load(option?: {
             select?: string;
@@ -5300,11 +5484,15 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
+         * `load(option?: string | string[]): Excel.ChartGridlinesFormat` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load.
+         *
          * `load(option?: { select?: string; expand?: string; }): Excel.ChartGridlinesFormat` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.ChartGridlinesFormat` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
          * @param option - A comma-delimited string or an array of strings that specify the properties/relationships to load.
          */
+
+        load(option?: Excel.Interfaces.ChartGridlinesFormatLoadOptions): Excel.ChartGridlinesFormat;
         load(option?: string | string[]): Excel.ChartGridlinesFormat;
         load(option?: {
             select?: string;
@@ -5397,11 +5585,15 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
+         * `load(option?: string | string[]): Excel.ChartLegend` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load.
+         *
          * `load(option?: { select?: string; expand?: string; }): Excel.ChartLegend` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.ChartLegend` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
          * @param option - A comma-delimited string or an array of strings that specify the properties/relationships to load.
          */
+
+        load(option?: Excel.Interfaces.ChartLegendLoadOptions): Excel.ChartLegend;
         load(option?: string | string[]): Excel.ChartLegend;
         load(option?: {
             select?: string;
@@ -5431,11 +5623,15 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
+         * `load(option?: string | string[]): Excel.ChartLegendEntry` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load.
+         *
          * `load(option?: { select?: string; expand?: string; }): Excel.ChartLegendEntry` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.ChartLegendEntry` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
          * @param option - A comma-delimited string or an array of strings that specify the properties/relationships to load.
          */
+
+        load(option?: Excel.Interfaces.ChartLegendEntryLoadOptions): Excel.ChartLegendEntry;
         load(option?: string | string[]): Excel.ChartLegendEntry;
         load(option?: {
             select?: string;
@@ -5475,11 +5671,15 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
+         * `load(option?: string | string[]): Excel.ChartLegendEntryCollection` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load.
+         *
          * `load(option?: { select?: string; expand?: string; }): Excel.ChartLegendEntryCollection` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.ChartLegendEntryCollection` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
          * @param option - A comma-delimited string or an array of strings that specify the properties/relationships to load.
          */
+
+        load(option?: Excel.Interfaces.ChartLegendEntryCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions): Excel.ChartLegendEntryCollection;
         load(option?: string | string[]): Excel.ChartLegendEntryCollection;
         load(option?: OfficeExtension.LoadOption): Excel.ChartLegendEntryCollection;
         toJSON(): Excel.Interfaces.ChartLegendEntryCollectionData;
@@ -5513,11 +5713,15 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
+         * `load(option?: string | string[]): Excel.ChartLegendFormat` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load.
+         *
          * `load(option?: { select?: string; expand?: string; }): Excel.ChartLegendFormat` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.ChartLegendFormat` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
          * @param option - A comma-delimited string or an array of strings that specify the properties/relationships to load.
          */
+
+        load(option?: Excel.Interfaces.ChartLegendFormatLoadOptions): Excel.ChartLegendFormat;
         load(option?: string | string[]): Excel.ChartLegendFormat;
         load(option?: {
             select?: string;
@@ -5650,11 +5854,15 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
+         * `load(option?: string | string[]): Excel.ChartTitle` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load.
+         *
          * `load(option?: { select?: string; expand?: string; }): Excel.ChartTitle` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.ChartTitle` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
          * @param option - A comma-delimited string or an array of strings that specify the properties/relationships to load.
          */
+
+        load(option?: Excel.Interfaces.ChartTitleLoadOptions): Excel.ChartTitle;
         load(option?: string | string[]): Excel.ChartTitle;
         load(option?: {
             select?: string;
@@ -5684,11 +5892,15 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
+         * `load(option?: string | string[]): Excel.ChartFormatString` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load.
+         *
          * `load(option?: { select?: string; expand?: string; }): Excel.ChartFormatString` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.ChartFormatString` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
          * @param option - A comma-delimited string or an array of strings that specify the properties/relationships to load.
          */
+
+        load(option?: Excel.Interfaces.ChartFormatStringLoadOptions): Excel.ChartFormatString;
         load(option?: string | string[]): Excel.ChartFormatString;
         load(option?: {
             select?: string;
@@ -5732,11 +5944,15 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
+         * `load(option?: string | string[]): Excel.ChartTitleFormat` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load.
+         *
          * `load(option?: { select?: string; expand?: string; }): Excel.ChartTitleFormat` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.ChartTitleFormat` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
          * @param option - A comma-delimited string or an array of strings that specify the properties/relationships to load.
          */
+
+        load(option?: Excel.Interfaces.ChartTitleFormatLoadOptions): Excel.ChartTitleFormat;
         load(option?: string | string[]): Excel.ChartTitleFormat;
         load(option?: {
             select?: string;
@@ -5811,11 +6027,15 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
+         * `load(option?: string | string[]): Excel.ChartBorder` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load.
+         *
          * `load(option?: { select?: string; expand?: string; }): Excel.ChartBorder` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.ChartBorder` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
          * @param option - A comma-delimited string or an array of strings that specify the properties/relationships to load.
          */
+
+        load(option?: Excel.Interfaces.ChartBorderLoadOptions): Excel.ChartBorder;
         load(option?: string | string[]): Excel.ChartBorder;
         load(option?: {
             select?: string;
@@ -5866,11 +6086,15 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
+         * `load(option?: string | string[]): Excel.ChartLineFormat` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load.
+         *
          * `load(option?: { select?: string; expand?: string; }): Excel.ChartLineFormat` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.ChartLineFormat` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
          * @param option - A comma-delimited string or an array of strings that specify the properties/relationships to load.
          */
+
+        load(option?: Excel.Interfaces.ChartLineFormatLoadOptions): Excel.ChartLineFormat;
         load(option?: string | string[]): Excel.ChartLineFormat;
         load(option?: {
             select?: string;
@@ -5935,11 +6159,15 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
+         * `load(option?: string | string[]): Excel.ChartFont` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load.
+         *
          * `load(option?: { select?: string; expand?: string; }): Excel.ChartFont` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.ChartFont` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
          * @param option - A comma-delimited string or an array of strings that specify the properties/relationships to load.
          */
+
+        load(option?: Excel.Interfaces.ChartFontLoadOptions): Excel.ChartFont;
         load(option?: string | string[]): Excel.ChartFont;
         load(option?: {
             select?: string;
@@ -6011,11 +6239,15 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
+         * `load(option?: string | string[]): Excel.ChartTrendline` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load.
+         *
          * `load(option?: { select?: string; expand?: string; }): Excel.ChartTrendline` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.ChartTrendline` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
          * @param option - A comma-delimited string or an array of strings that specify the properties/relationships to load.
          */
+
+        load(option?: Excel.Interfaces.ChartTrendlineLoadOptions): Excel.ChartTrendline;
         load(option?: string | string[]): Excel.ChartTrendline;
         load(option?: {
             select?: string;
@@ -6073,11 +6305,15 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
+         * `load(option?: string | string[]): Excel.ChartTrendlineCollection` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load.
+         *
          * `load(option?: { select?: string; expand?: string; }): Excel.ChartTrendlineCollection` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.ChartTrendlineCollection` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
          * @param option - A comma-delimited string or an array of strings that specify the properties/relationships to load.
          */
+
+        load(option?: Excel.Interfaces.ChartTrendlineCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions): Excel.ChartTrendlineCollection;
         load(option?: string | string[]): Excel.ChartTrendlineCollection;
         load(option?: OfficeExtension.LoadOption): Excel.ChartTrendlineCollection;
         toJSON(): Excel.Interfaces.ChartTrendlineCollectionData;
@@ -6104,11 +6340,15 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
+         * `load(option?: string | string[]): Excel.ChartTrendlineFormat` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load.
+         *
          * `load(option?: { select?: string; expand?: string; }): Excel.ChartTrendlineFormat` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.ChartTrendlineFormat` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
          * @param option - A comma-delimited string or an array of strings that specify the properties/relationships to load.
          */
+
+        load(option?: Excel.Interfaces.ChartTrendlineFormatLoadOptions): Excel.ChartTrendlineFormat;
         load(option?: string | string[]): Excel.ChartTrendlineFormat;
         load(option?: {
             select?: string;
@@ -6224,11 +6464,15 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
+         * `load(option?: string | string[]): Excel.TableSort` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load.
+         *
          * `load(option?: { select?: string; expand?: string; }): Excel.TableSort` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.TableSort` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
          * @param option - A comma-delimited string or an array of strings that specify the properties/relationships to load.
          */
+
+        load(option?: Excel.Interfaces.TableSortLoadOptions): Excel.TableSort;
         load(option?: string | string[]): Excel.TableSort;
         load(option?: {
             select?: string;
@@ -6435,11 +6679,15 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
+         * `load(option?: string | string[]): Excel.Filter` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load.
+         *
          * `load(option?: { select?: string; expand?: string; }): Excel.Filter` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.Filter` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
          * @param option - A comma-delimited string or an array of strings that specify the properties/relationships to load.
          */
+
+        load(option?: Excel.Interfaces.FilterLoadOptions): Excel.Filter;
         load(option?: string | string[]): Excel.Filter;
         load(option?: {
             select?: string;
@@ -6618,11 +6866,15 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
+         * `load(option?: string | string[]): Excel.CustomXmlPartScopedCollection` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load.
+         *
          * `load(option?: { select?: string; expand?: string; }): Excel.CustomXmlPartScopedCollection` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.CustomXmlPartScopedCollection` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
          * @param option - A comma-delimited string or an array of strings that specify the properties/relationships to load.
          */
+
+        load(option?: Excel.Interfaces.CustomXmlPartScopedCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions): Excel.CustomXmlPartScopedCollection;
         load(option?: string | string[]): Excel.CustomXmlPartScopedCollection;
         load(option?: OfficeExtension.LoadOption): Excel.CustomXmlPartScopedCollection;
         toJSON(): Excel.Interfaces.CustomXmlPartScopedCollectionData;
@@ -6687,11 +6939,15 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
+         * `load(option?: string | string[]): Excel.CustomXmlPartCollection` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load.
+         *
          * `load(option?: { select?: string; expand?: string; }): Excel.CustomXmlPartCollection` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.CustomXmlPartCollection` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
          * @param option - A comma-delimited string or an array of strings that specify the properties/relationships to load.
          */
+
+        load(option?: Excel.Interfaces.CustomXmlPartCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions): Excel.CustomXmlPartCollection;
         load(option?: string | string[]): Excel.CustomXmlPartCollection;
         load(option?: OfficeExtension.LoadOption): Excel.CustomXmlPartCollection;
         toJSON(): Excel.Interfaces.CustomXmlPartCollectionData;
@@ -6747,11 +7003,15 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
+         * `load(option?: string | string[]): Excel.CustomXmlPart` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load.
+         *
          * `load(option?: { select?: string; expand?: string; }): Excel.CustomXmlPart` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.CustomXmlPart` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
          * @param option - A comma-delimited string or an array of strings that specify the properties/relationships to load.
          */
+
+        load(option?: Excel.Interfaces.CustomXmlPartLoadOptions): Excel.CustomXmlPart;
         load(option?: string | string[]): Excel.CustomXmlPart;
         load(option?: {
             select?: string;
@@ -6807,11 +7067,15 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
+         * `load(option?: string | string[]): Excel.PivotTableCollection` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load.
+         *
          * `load(option?: { select?: string; expand?: string; }): Excel.PivotTableCollection` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.PivotTableCollection` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
          * @param option - A comma-delimited string or an array of strings that specify the properties/relationships to load.
          */
+
+        load(option?: Excel.Interfaces.PivotTableCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions): Excel.PivotTableCollection;
         load(option?: string | string[]): Excel.PivotTableCollection;
         load(option?: OfficeExtension.LoadOption): Excel.PivotTableCollection;
         toJSON(): Excel.Interfaces.PivotTableCollectionData;
@@ -6859,11 +7123,15 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
+         * `load(option?: string | string[]): Excel.PivotTable` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load.
+         *
          * `load(option?: { select?: string; expand?: string; }): Excel.PivotTable` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.PivotTable` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
          * @param option - A comma-delimited string or an array of strings that specify the properties/relationships to load.
          */
+
+        load(option?: Excel.Interfaces.PivotTableLoadOptions): Excel.PivotTable;
         load(option?: string | string[]): Excel.PivotTable;
         load(option?: {
             select?: string;
@@ -6970,11 +7238,15 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
+         * `load(option?: string | string[]): Excel.DocumentProperties` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load.
+         *
          * `load(option?: { select?: string; expand?: string; }): Excel.DocumentProperties` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.DocumentProperties` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
          * @param option - A comma-delimited string or an array of strings that specify the properties/relationships to load.
          */
+
+        load(option?: Excel.Interfaces.DocumentPropertiesLoadOptions): Excel.DocumentProperties;
         load(option?: string | string[]): Excel.DocumentProperties;
         load(option?: {
             select?: string;
@@ -7025,11 +7297,15 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
+         * `load(option?: string | string[]): Excel.CustomProperty` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load.
+         *
          * `load(option?: { select?: string; expand?: string; }): Excel.CustomProperty` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.CustomProperty` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
          * @param option - A comma-delimited string or an array of strings that specify the properties/relationships to load.
          */
+
+        load(option?: Excel.Interfaces.CustomPropertyLoadOptions): Excel.CustomProperty;
         load(option?: string | string[]): Excel.CustomProperty;
         load(option?: {
             select?: string;
@@ -7095,11 +7371,15 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
+         * `load(option?: string | string[]): Excel.CustomPropertyCollection` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load.
+         *
          * `load(option?: { select?: string; expand?: string; }): Excel.CustomPropertyCollection` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.CustomPropertyCollection` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
          * @param option - A comma-delimited string or an array of strings that specify the properties/relationships to load.
          */
+
+        load(option?: Excel.Interfaces.CustomPropertyCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions): Excel.CustomPropertyCollection;
         load(option?: string | string[]): Excel.CustomPropertyCollection;
         load(option?: OfficeExtension.LoadOption): Excel.CustomPropertyCollection;
         toJSON(): Excel.Interfaces.CustomPropertyCollectionData;
@@ -7171,11 +7451,15 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
+         * `load(option?: string | string[]): Excel.ConditionalFormatCollection` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load.
+         *
          * `load(option?: { select?: string; expand?: string; }): Excel.ConditionalFormatCollection` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.ConditionalFormatCollection` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
          * @param option - A comma-delimited string or an array of strings that specify the properties/relationships to load.
          */
+
+        load(option?: Excel.Interfaces.ConditionalFormatCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions): Excel.ConditionalFormatCollection;
         load(option?: string | string[]): Excel.ConditionalFormatCollection;
         load(option?: OfficeExtension.LoadOption): Excel.ConditionalFormatCollection;
         toJSON(): Excel.Interfaces.ConditionalFormatCollectionData;
@@ -7367,11 +7651,15 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
+         * `load(option?: string | string[]): Excel.ConditionalFormat` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load.
+         *
          * `load(option?: { select?: string; expand?: string; }): Excel.ConditionalFormat` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.ConditionalFormat` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
          * @param option - A comma-delimited string or an array of strings that specify the properties/relationships to load.
          */
+
+        load(option?: Excel.Interfaces.ConditionalFormatLoadOptions): Excel.ConditionalFormat;
         load(option?: string | string[]): Excel.ConditionalFormat;
         load(option?: {
             select?: string;
@@ -7451,11 +7739,15 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
+         * `load(option?: string | string[]): Excel.DataBarConditionalFormat` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load.
+         *
          * `load(option?: { select?: string; expand?: string; }): Excel.DataBarConditionalFormat` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.DataBarConditionalFormat` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
          * @param option - A comma-delimited string or an array of strings that specify the properties/relationships to load.
          */
+
+        load(option?: Excel.Interfaces.DataBarConditionalFormatLoadOptions): Excel.DataBarConditionalFormat;
         load(option?: string | string[]): Excel.DataBarConditionalFormat;
         load(option?: {
             select?: string;
@@ -7500,11 +7792,15 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
+         * `load(option?: string | string[]): Excel.ConditionalDataBarPositiveFormat` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load.
+         *
          * `load(option?: { select?: string; expand?: string; }): Excel.ConditionalDataBarPositiveFormat` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.ConditionalDataBarPositiveFormat` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
          * @param option - A comma-delimited string or an array of strings that specify the properties/relationships to load.
          */
+
+        load(option?: Excel.Interfaces.ConditionalDataBarPositiveFormatLoadOptions): Excel.ConditionalDataBarPositiveFormat;
         load(option?: string | string[]): Excel.ConditionalDataBarPositiveFormat;
         load(option?: {
             select?: string;
@@ -7556,11 +7852,15 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
+         * `load(option?: string | string[]): Excel.ConditionalDataBarNegativeFormat` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load.
+         *
          * `load(option?: { select?: string; expand?: string; }): Excel.ConditionalDataBarNegativeFormat` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.ConditionalDataBarNegativeFormat` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
          * @param option - A comma-delimited string or an array of strings that specify the properties/relationships to load.
          */
+
+        load(option?: Excel.Interfaces.ConditionalDataBarNegativeFormatLoadOptions): Excel.ConditionalDataBarNegativeFormat;
         load(option?: string | string[]): Excel.ConditionalDataBarNegativeFormat;
         load(option?: {
             select?: string;
@@ -7619,11 +7919,15 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
+         * `load(option?: string | string[]): Excel.CustomConditionalFormat` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load.
+         *
          * `load(option?: { select?: string; expand?: string; }): Excel.CustomConditionalFormat` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.CustomConditionalFormat` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
          * @param option - A comma-delimited string or an array of strings that specify the properties/relationships to load.
          */
+
+        load(option?: Excel.Interfaces.CustomConditionalFormatLoadOptions): Excel.CustomConditionalFormat;
         load(option?: string | string[]): Excel.CustomConditionalFormat;
         load(option?: {
             select?: string;
@@ -7667,11 +7971,15 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
+         * `load(option?: string | string[]): Excel.ConditionalFormatRule` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load.
+         *
          * `load(option?: { select?: string; expand?: string; }): Excel.ConditionalFormatRule` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.ConditionalFormatRule` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
          * @param option - A comma-delimited string or an array of strings that specify the properties/relationships to load.
          */
+
+        load(option?: Excel.Interfaces.ConditionalFormatRuleLoadOptions): Excel.ConditionalFormatRule;
         load(option?: string | string[]): Excel.ConditionalFormatRule;
         load(option?: {
             select?: string;
@@ -7722,11 +8030,15 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
+         * `load(option?: string | string[]): Excel.IconSetConditionalFormat` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load.
+         *
          * `load(option?: { select?: string; expand?: string; }): Excel.IconSetConditionalFormat` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.IconSetConditionalFormat` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
          * @param option - A comma-delimited string or an array of strings that specify the properties/relationships to load.
          */
+
+        load(option?: Excel.Interfaces.IconSetConditionalFormatLoadOptions): Excel.IconSetConditionalFormat;
         load(option?: string | string[]): Excel.IconSetConditionalFormat;
         load(option?: {
             select?: string;
@@ -7799,11 +8111,15 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
+         * `load(option?: string | string[]): Excel.ColorScaleConditionalFormat` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load.
+         *
          * `load(option?: { select?: string; expand?: string; }): Excel.ColorScaleConditionalFormat` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.ColorScaleConditionalFormat` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
          * @param option - A comma-delimited string or an array of strings that specify the properties/relationships to load.
          */
+
+        load(option?: Excel.Interfaces.ColorScaleConditionalFormatLoadOptions): Excel.ColorScaleConditionalFormat;
         load(option?: string | string[]): Excel.ColorScaleConditionalFormat;
         load(option?: {
             select?: string;
@@ -7898,11 +8214,15 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
+         * `load(option?: string | string[]): Excel.TopBottomConditionalFormat` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load.
+         *
          * `load(option?: { select?: string; expand?: string; }): Excel.TopBottomConditionalFormat` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.TopBottomConditionalFormat` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
          * @param option - A comma-delimited string or an array of strings that specify the properties/relationships to load.
          */
+
+        load(option?: Excel.Interfaces.TopBottomConditionalFormatLoadOptions): Excel.TopBottomConditionalFormat;
         load(option?: string | string[]): Excel.TopBottomConditionalFormat;
         load(option?: {
             select?: string;
@@ -7961,11 +8281,15 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
+         * `load(option?: string | string[]): Excel.PresetCriteriaConditionalFormat` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load.
+         *
          * `load(option?: { select?: string; expand?: string; }): Excel.PresetCriteriaConditionalFormat` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.PresetCriteriaConditionalFormat` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
          * @param option - A comma-delimited string or an array of strings that specify the properties/relationships to load.
          */
+
+        load(option?: Excel.Interfaces.PresetCriteriaConditionalFormatLoadOptions): Excel.PresetCriteriaConditionalFormat;
         load(option?: string | string[]): Excel.PresetCriteriaConditionalFormat;
         load(option?: {
             select?: string;
@@ -8017,11 +8341,15 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
+         * `load(option?: string | string[]): Excel.TextConditionalFormat` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load.
+         *
          * `load(option?: { select?: string; expand?: string; }): Excel.TextConditionalFormat` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.TextConditionalFormat` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
          * @param option - A comma-delimited string or an array of strings that specify the properties/relationships to load.
          */
+
+        load(option?: Excel.Interfaces.TextConditionalFormatLoadOptions): Excel.TextConditionalFormat;
         load(option?: string | string[]): Excel.TextConditionalFormat;
         load(option?: {
             select?: string;
@@ -8080,11 +8408,15 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
+         * `load(option?: string | string[]): Excel.CellValueConditionalFormat` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load.
+         *
          * `load(option?: { select?: string; expand?: string; }): Excel.CellValueConditionalFormat` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.CellValueConditionalFormat` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
          * @param option - A comma-delimited string or an array of strings that specify the properties/relationships to load.
          */
+
+        load(option?: Excel.Interfaces.CellValueConditionalFormatLoadOptions): Excel.CellValueConditionalFormat;
         load(option?: string | string[]): Excel.CellValueConditionalFormat;
         load(option?: {
             select?: string;
@@ -8164,11 +8496,15 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
+         * `load(option?: string | string[]): Excel.ConditionalRangeFormat` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load.
+         *
          * `load(option?: { select?: string; expand?: string; }): Excel.ConditionalRangeFormat` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.ConditionalRangeFormat` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
          * @param option - A comma-delimited string or an array of strings that specify the properties/relationships to load.
          */
+
+        load(option?: Excel.Interfaces.ConditionalRangeFormatLoadOptions): Excel.ConditionalRangeFormat;
         load(option?: string | string[]): Excel.ConditionalRangeFormat;
         load(option?: {
             select?: string;
@@ -8233,11 +8569,15 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
+         * `load(option?: string | string[]): Excel.ConditionalRangeFont` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load.
+         *
          * `load(option?: { select?: string; expand?: string; }): Excel.ConditionalRangeFont` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.ConditionalRangeFont` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
          * @param option - A comma-delimited string or an array of strings that specify the properties/relationships to load.
          */
+
+        load(option?: Excel.Interfaces.ConditionalRangeFontLoadOptions): Excel.ConditionalRangeFont;
         load(option?: string | string[]): Excel.ConditionalRangeFont;
         load(option?: {
             select?: string;
@@ -8274,11 +8614,15 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
+         * `load(option?: string | string[]): Excel.ConditionalRangeFill` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load.
+         *
          * `load(option?: { select?: string; expand?: string; }): Excel.ConditionalRangeFill` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.ConditionalRangeFill` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
          * @param option - A comma-delimited string or an array of strings that specify the properties/relationships to load.
          */
+
+        load(option?: Excel.Interfaces.ConditionalRangeFillLoadOptions): Excel.ConditionalRangeFill;
         load(option?: string | string[]): Excel.ConditionalRangeFill;
         load(option?: {
             select?: string;
@@ -8322,11 +8666,15 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
+         * `load(option?: string | string[]): Excel.ConditionalRangeBorder` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load.
+         *
          * `load(option?: { select?: string; expand?: string; }): Excel.ConditionalRangeBorder` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.ConditionalRangeBorder` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
          * @param option - A comma-delimited string or an array of strings that specify the properties/relationships to load.
          */
+
+        load(option?: Excel.Interfaces.ConditionalRangeBorderLoadOptions): Excel.ConditionalRangeBorder;
         load(option?: string | string[]): Excel.ConditionalRangeBorder;
         load(option?: {
             select?: string;
@@ -8412,11 +8760,15 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
+         * `load(option?: string | string[]): Excel.ConditionalRangeBorderCollection` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load.
+         *
          * `load(option?: { select?: string; expand?: string; }): Excel.ConditionalRangeBorderCollection` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.ConditionalRangeBorderCollection` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
          * @param option - A comma-delimited string or an array of strings that specify the properties/relationships to load.
          */
+
+        load(option?: Excel.Interfaces.ConditionalRangeBorderCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions): Excel.ConditionalRangeBorderCollection;
         load(option?: string | string[]): Excel.ConditionalRangeBorderCollection;
         load(option?: OfficeExtension.LoadOption): Excel.ConditionalRangeBorderCollection;
         toJSON(): Excel.Interfaces.ConditionalRangeBorderCollectionData;
@@ -8590,11 +8942,15 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
+         * `load(option?: string | string[]): Excel.Style` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load.
+         *
          * `load(option?: { select?: string; expand?: string; }): Excel.Style` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.Style` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
          * @param option - A comma-delimited string or an array of strings that specify the properties/relationships to load.
          */
+
+        load(option?: Excel.Interfaces.StyleLoadOptions): Excel.Style;
         load(option?: string | string[]): Excel.Style;
         load(option?: {
             select?: string;
@@ -8636,11 +8992,15 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
+         * `load(option?: string | string[]): Excel.StyleCollection` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load.
+         *
          * `load(option?: { select?: string; expand?: string; }): Excel.StyleCollection` - Where option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that specifies the relationships to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.StyleCollection` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
          * @param option - A comma-delimited string or an array of strings that specify the properties/relationships to load.
          */
+
+        load(option?: Excel.Interfaces.StyleCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions): Excel.StyleCollection;
         load(option?: string | string[]): Excel.StyleCollection;
         load(option?: OfficeExtension.LoadOption): Excel.StyleCollection;
         toJSON(): Excel.Interfaces.StyleCollectionData;
@@ -9966,6 +10326,8 @@ export declare namespace Excel {
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): FunctionResult<T>` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
          * @param option - A comma-delimited string or an array of strings that specify the properties/relationships to load.
          */
+
+        load(option?: Excel.Interfaces.FunctionResultLoadOptions): FunctionResult<T>;
         load(option?: string | string[]): FunctionResult<T>;
         load(option?: {
             select?: string;

@@ -198,6 +198,10 @@ items:
       In addition to this signature, this method has the following signatures:
 
 
+      `load(option?: string | string[]): OneNote.SectionGroup` - Where option is a comma-delimited string or an array of
+      strings that specify the properties/relationships to load.
+
+
       `load(option?: { select?: string; expand?: string; }): OneNote.SectionGroup` - Where option.select is a
       comma-delimited string that specifies the properties/relationships to load, and options.expand is a
       comma-delimited string that specifies the relationships to load.
@@ -347,7 +351,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: string | string[]): OneNote.SectionGroup;'
+      content: 'load(option?: OneNote.Interfaces.SectionGroupLoadOptions): OneNote.SectionGroup;'
       return:
         type:
           - onenote.OneNote.SectionGroup
@@ -356,7 +360,7 @@ items:
         - id: option
           description: A comma-delimited string or an array of strings that specify the properties/relationships to load.
           type:
-            - 'string | string[]'
+            - OneNote.Interfaces.SectionGroupLoadOptions
   - uid: onenote.OneNote.SectionGroup.name
     summary: |-
       Gets the name of the section group. Read-only.

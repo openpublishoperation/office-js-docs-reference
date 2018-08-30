@@ -95,6 +95,10 @@ items:
       In addition to this signature, this method has the following signatures:
 
 
+      `load(option?: string | string[]): Visio.Shape` - Where option is a comma-delimited string or an array of strings
+      that specify the properties/relationships to load.
+
+
       `load(option?: { select?: string; expand?: string; }): Visio.Shape` - Where option.select is a comma-delimited
       string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that
       specifies the relationships to load.
@@ -152,7 +156,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: string | string[]): Visio.Shape;'
+      content: 'load(option?: Visio.Interfaces.ShapeLoadOptions): Visio.Shape;'
       return:
         type:
           - visio.Visio.Shape
@@ -161,7 +165,7 @@ items:
         - id: option
           description: A comma-delimited string or an array of strings that specify the properties/relationships to load.
           type:
-            - 'string | string[]'
+            - Visio.Interfaces.ShapeLoadOptions
   - uid: visio.Visio.Shape.name
     summary: |-
       Shape's name. Read-only.

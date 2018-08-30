@@ -28,6 +28,10 @@ items:
       In addition to this signature, this method has the following signatures:
 
 
+      `load(option?: string | string[]): Excel.WorksheetProtection` - Where option is a comma-delimited string or an
+      array of strings that specify the properties/relationships to load.
+
+
       `load(option?: { select?: string; expand?: string; }): Excel.WorksheetProtection` - Where option.select is a
       comma-delimited string that specifies the properties/relationships to load, and options.expand is a
       comma-delimited string that specifies the relationships to load.
@@ -44,7 +48,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: string | string[]): Excel.WorksheetProtection;'
+      content: 'load(option?: Excel.Interfaces.WorksheetProtectionLoadOptions): Excel.WorksheetProtection;'
       return:
         type:
           - excel.Excel.WorksheetProtection
@@ -53,7 +57,7 @@ items:
         - id: option
           description: A comma-delimited string or an array of strings that specify the properties/relationships to load.
           type:
-            - 'string | string[]'
+            - Excel.Interfaces.WorksheetProtectionLoadOptions
   - uid: excel.Excel.WorksheetProtection.options
     summary: |-
       Sheet protection options. Read-only.

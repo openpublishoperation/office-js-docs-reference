@@ -995,7 +995,7 @@
             },
             "load": {
               "kind": "method",
-              "signature": "load(option?: string | string[]): Word.Body;",
+              "signature": "load(option?: Word.Interfaces.BodyLoadOptions): Word.Body;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -1014,7 +1014,7 @@
                   ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "string | string[]"
+                  "type": "Word.Interfaces.BodyLoadOptions"
                 }
               },
               "deprecatedMessage": [],
@@ -1028,6 +1028,13 @@
                 {
                   "kind": "text",
                   "text": "In addition to this signature, this method has the following signatures:"
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "`load(option?: string | string[]): Word.Body` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load."
                 },
                 {
                   "kind": "paragraph"
@@ -3052,7 +3059,7 @@
             },
             "load": {
               "kind": "method",
-              "signature": "load(option?: string | string[]): Word.ContentControl;",
+              "signature": "load(option?: Word.Interfaces.ContentControlLoadOptions): Word.ContentControl;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -3071,7 +3078,7 @@
                   ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "string | string[]"
+                  "type": "Word.Interfaces.ContentControlLoadOptions"
                 }
               },
               "deprecatedMessage": [],
@@ -3085,6 +3092,13 @@
                 {
                   "kind": "text",
                   "text": "In addition to this signature, this method has the following signatures:"
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "`load(option?: string | string[]): Word.ContentControl` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load."
                 },
                 {
                   "kind": "paragraph"
@@ -4310,7 +4324,7 @@
             },
             "load": {
               "kind": "method",
-              "signature": "load(option?: string | string[]): Word.ContentControlCollection;",
+              "signature": "load(option?: Word.Interfaces.ContentControlCollectionLoadOptions & Word.Interfaces.CollectionLoadOptions): Word.ContentControlCollection;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -4329,7 +4343,7 @@
                   ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "string | string[]"
+                  "type": "Word.Interfaces.ContentControlCollectionLoadOptions & Word.Interfaces.CollectionLoadOptions"
                 }
               },
               "deprecatedMessage": [],
@@ -4343,6 +4357,13 @@
                 {
                   "kind": "text",
                   "text": "In addition to this signature, this method has the following signatures:"
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "`load(option?: string | string[]): Word.ContentControlCollection` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load."
                 },
                 {
                   "kind": "paragraph"
@@ -4694,7 +4715,7 @@
             },
             "load": {
               "kind": "method",
-              "signature": "load(option?: string | string[]): Word.CustomProperty;",
+              "signature": "load(option?: Word.Interfaces.CustomPropertyLoadOptions): Word.CustomProperty;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -4713,7 +4734,7 @@
                   ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "string | string[]"
+                  "type": "Word.Interfaces.CustomPropertyLoadOptions"
                 }
               },
               "deprecatedMessage": [],
@@ -4727,6 +4748,13 @@
                 {
                   "kind": "text",
                   "text": "In addition to this signature, this method has the following signatures:"
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "`load(option?: string | string[]): Word.CustomProperty` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load."
                 },
                 {
                   "kind": "paragraph"
@@ -5144,7 +5172,7 @@
             },
             "load": {
               "kind": "method",
-              "signature": "load(option?: string | string[]): Word.CustomPropertyCollection;",
+              "signature": "load(option?: Word.Interfaces.CustomPropertyCollectionLoadOptions & Word.Interfaces.CollectionLoadOptions): Word.CustomPropertyCollection;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -5163,7 +5191,7 @@
                   ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "string | string[]"
+                  "type": "Word.Interfaces.CustomPropertyCollectionLoadOptions & Word.Interfaces.CollectionLoadOptions"
                 }
               },
               "deprecatedMessage": [],
@@ -5177,6 +5205,13 @@
                 {
                   "kind": "text",
                   "text": "In addition to this signature, this method has the following signatures:"
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "`load(option?: string | string[]): Word.CustomPropertyCollection` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load."
                 },
                 {
                   "kind": "paragraph"
@@ -5379,7 +5414,7 @@
             },
             "load": {
               "kind": "method",
-              "signature": "load(option?: string | string[]): Word.Document;",
+              "signature": "load(option?: Word.Interfaces.DocumentLoadOptions): Word.Document;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -5398,7 +5433,7 @@
                   ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "string | string[]"
+                  "type": "Word.Interfaces.DocumentLoadOptions"
                 }
               },
               "deprecatedMessage": [],
@@ -5412,6 +5447,13 @@
                 {
                   "kind": "text",
                   "text": "In addition to this signature, this method has the following signatures:"
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "`load(option?: string | string[]): Word.Document` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load."
                 },
                 {
                   "kind": "paragraph"
@@ -5698,7 +5740,7 @@
             },
             "load": {
               "kind": "method",
-              "signature": "load(option?: string | string[]): Word.DocumentCreated;",
+              "signature": "load(option?: Word.Interfaces.DocumentCreatedLoadOptions): Word.DocumentCreated;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -5717,7 +5759,7 @@
                   ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "string | string[]"
+                  "type": "Word.Interfaces.DocumentCreatedLoadOptions"
                 }
               },
               "deprecatedMessage": [],
@@ -5731,6 +5773,13 @@
                 {
                   "kind": "text",
                   "text": "In addition to this signature, this method has the following signatures:"
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "`load(option?: string | string[]): Word.DocumentCreated` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load."
                 },
                 {
                   "kind": "paragraph"
@@ -6328,7 +6377,7 @@
             },
             "load": {
               "kind": "method",
-              "signature": "load(option?: string | string[]): Word.DocumentProperties;",
+              "signature": "load(option?: Word.Interfaces.DocumentPropertiesLoadOptions): Word.DocumentProperties;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -6347,7 +6396,7 @@
                   ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "string | string[]"
+                  "type": "Word.Interfaces.DocumentPropertiesLoadOptions"
                 }
               },
               "deprecatedMessage": [],
@@ -6361,6 +6410,13 @@
                 {
                   "kind": "text",
                   "text": "In addition to this signature, this method has the following signatures:"
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "`load(option?: string | string[]): Word.DocumentProperties` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load."
                 },
                 {
                   "kind": "paragraph"
@@ -6917,7 +6973,7 @@
             },
             "load": {
               "kind": "method",
-              "signature": "load(option?: string | string[]): Word.Font;",
+              "signature": "load(option?: Word.Interfaces.FontLoadOptions): Word.Font;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -6936,7 +6992,7 @@
                   ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "string | string[]"
+                  "type": "Word.Interfaces.FontLoadOptions"
                 }
               },
               "deprecatedMessage": [],
@@ -6950,6 +7006,13 @@
                 {
                   "kind": "text",
                   "text": "In addition to this signature, this method has the following signatures:"
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "`load(option?: string | string[]): Word.Font` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load."
                 },
                 {
                   "kind": "paragraph"
@@ -8115,7 +8178,7 @@
             },
             "load": {
               "kind": "method",
-              "signature": "load(option?: string | string[]): Word.InlinePicture;",
+              "signature": "load(option?: Word.Interfaces.InlinePictureLoadOptions): Word.InlinePicture;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -8134,7 +8197,7 @@
                   ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "string | string[]"
+                  "type": "Word.Interfaces.InlinePictureLoadOptions"
                 }
               },
               "deprecatedMessage": [],
@@ -8148,6 +8211,13 @@
                 {
                   "kind": "text",
                   "text": "In addition to this signature, this method has the following signatures:"
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "`load(option?: string | string[]): Word.InlinePicture` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load."
                 },
                 {
                   "kind": "paragraph"
@@ -8661,7 +8731,7 @@
             },
             "load": {
               "kind": "method",
-              "signature": "load(option?: string | string[]): Word.InlinePictureCollection;",
+              "signature": "load(option?: Word.Interfaces.InlinePictureCollectionLoadOptions & Word.Interfaces.CollectionLoadOptions): Word.InlinePictureCollection;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -8680,7 +8750,7 @@
                   ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "string | string[]"
+                  "type": "Word.Interfaces.InlinePictureCollectionLoadOptions & Word.Interfaces.CollectionLoadOptions"
                 }
               },
               "deprecatedMessage": [],
@@ -8694,6 +8764,13 @@
                 {
                   "kind": "text",
                   "text": "In addition to this signature, this method has the following signatures:"
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "`load(option?: string | string[]): Word.InlinePictureCollection` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load."
                 },
                 {
                   "kind": "paragraph"
@@ -19365,7 +19442,7 @@
             },
             "load": {
               "kind": "method",
-              "signature": "load(option?: string | string[]): Word.List;",
+              "signature": "load(option?: Word.Interfaces.ListLoadOptions): Word.List;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -19384,7 +19461,7 @@
                   ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "string | string[]"
+                  "type": "Word.Interfaces.ListLoadOptions"
                 }
               },
               "deprecatedMessage": [],
@@ -19398,6 +19475,13 @@
                 {
                   "kind": "text",
                   "text": "In addition to this signature, this method has the following signatures:"
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "`load(option?: string | string[]): Word.List` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load."
                 },
                 {
                   "kind": "paragraph"
@@ -20173,7 +20257,7 @@
             },
             "load": {
               "kind": "method",
-              "signature": "load(option?: string | string[]): Word.ListCollection;",
+              "signature": "load(option?: Word.Interfaces.ListCollectionLoadOptions & Word.Interfaces.CollectionLoadOptions): Word.ListCollection;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -20192,7 +20276,7 @@
                   ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "string | string[]"
+                  "type": "Word.Interfaces.ListCollectionLoadOptions & Word.Interfaces.CollectionLoadOptions"
                 }
               },
               "deprecatedMessage": [],
@@ -20206,6 +20290,13 @@
                 {
                   "kind": "text",
                   "text": "In addition to this signature, this method has the following signatures:"
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "`load(option?: string | string[]): Word.ListCollection` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load."
                 },
                 {
                   "kind": "paragraph"
@@ -20509,7 +20600,7 @@
             },
             "load": {
               "kind": "method",
-              "signature": "load(option?: string | string[]): Word.ListItem;",
+              "signature": "load(option?: Word.Interfaces.ListItemLoadOptions): Word.ListItem;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -20528,7 +20619,7 @@
                   ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "string | string[]"
+                  "type": "Word.Interfaces.ListItemLoadOptions"
                 }
               },
               "deprecatedMessage": [],
@@ -20542,6 +20633,13 @@
                 {
                   "kind": "text",
                   "text": "In addition to this signature, this method has the following signatures:"
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "`load(option?: string | string[]): Word.ListItem` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load."
                 },
                 {
                   "kind": "paragraph"
@@ -22339,7 +22437,7 @@
             },
             "load": {
               "kind": "method",
-              "signature": "load(option?: string | string[]): Word.Paragraph;",
+              "signature": "load(option?: Word.Interfaces.ParagraphLoadOptions): Word.Paragraph;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -22358,7 +22456,7 @@
                   ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "string | string[]"
+                  "type": "Word.Interfaces.ParagraphLoadOptions"
                 }
               },
               "deprecatedMessage": [],
@@ -22372,6 +22470,13 @@
                 {
                   "kind": "text",
                   "text": "In addition to this signature, this method has the following signatures:"
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "`load(option?: string | string[]): Word.Paragraph` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load."
                 },
                 {
                   "kind": "paragraph"
@@ -23270,7 +23375,7 @@
             },
             "load": {
               "kind": "method",
-              "signature": "load(option?: string | string[]): Word.ParagraphCollection;",
+              "signature": "load(option?: Word.Interfaces.ParagraphCollectionLoadOptions & Word.Interfaces.CollectionLoadOptions): Word.ParagraphCollection;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -23289,7 +23394,7 @@
                   ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "string | string[]"
+                  "type": "Word.Interfaces.ParagraphCollectionLoadOptions & Word.Interfaces.CollectionLoadOptions"
                 }
               },
               "deprecatedMessage": [],
@@ -23303,6 +23408,13 @@
                 {
                   "kind": "text",
                   "text": "In addition to this signature, this method has the following signatures:"
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "`load(option?: string | string[]): Word.ParagraphCollection` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load."
                 },
                 {
                   "kind": "paragraph"
@@ -24676,7 +24788,7 @@
             },
             "load": {
               "kind": "method",
-              "signature": "load(option?: string | string[]): Word.Range;",
+              "signature": "load(option?: Word.Interfaces.RangeLoadOptions): Word.Range;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -24695,7 +24807,7 @@
                   ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "string | string[]"
+                  "type": "Word.Interfaces.RangeLoadOptions"
                 }
               },
               "deprecatedMessage": [],
@@ -24709,6 +24821,13 @@
                 {
                   "kind": "text",
                   "text": "In addition to this signature, this method has the following signatures:"
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "`load(option?: string | string[]): Word.Range` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load."
                 },
                 {
                   "kind": "paragraph"
@@ -25442,7 +25561,7 @@
             },
             "load": {
               "kind": "method",
-              "signature": "load(option?: string | string[]): Word.RangeCollection;",
+              "signature": "load(option?: Word.Interfaces.RangeCollectionLoadOptions & Word.Interfaces.CollectionLoadOptions): Word.RangeCollection;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -25461,7 +25580,7 @@
                   ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "string | string[]"
+                  "type": "Word.Interfaces.RangeCollectionLoadOptions & Word.Interfaces.CollectionLoadOptions"
                 }
               },
               "deprecatedMessage": [],
@@ -25475,6 +25594,13 @@
                 {
                   "kind": "text",
                   "text": "In addition to this signature, this method has the following signatures:"
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "`load(option?: string | string[]): Word.RangeCollection` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load."
                 },
                 {
                   "kind": "paragraph"
@@ -25938,7 +26064,7 @@
             },
             "load": {
               "kind": "method",
-              "signature": "load(option?: string | string[]): Word.SearchOptions;",
+              "signature": "load(option?: Word.Interfaces.SearchOptionsLoadOptions): Word.SearchOptions;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -25957,7 +26083,7 @@
                   ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "string | string[]"
+                  "type": "Word.Interfaces.SearchOptionsLoadOptions"
                 }
               },
               "deprecatedMessage": [],
@@ -25971,6 +26097,13 @@
                 {
                   "kind": "text",
                   "text": "In addition to this signature, this method has the following signatures:"
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "`load(option?: string | string[]): Word.SearchOptions` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load."
                 },
                 {
                   "kind": "paragraph"
@@ -26404,7 +26537,7 @@
             },
             "load": {
               "kind": "method",
-              "signature": "load(option?: string | string[]): Word.Section;",
+              "signature": "load(option?: Word.Interfaces.SectionLoadOptions): Word.Section;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -26423,7 +26556,7 @@
                   ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "string | string[]"
+                  "type": "Word.Interfaces.SectionLoadOptions"
                 }
               },
               "deprecatedMessage": [],
@@ -26437,6 +26570,13 @@
                 {
                   "kind": "text",
                   "text": "In addition to this signature, this method has the following signatures:"
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "`load(option?: string | string[]): Word.Section` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load."
                 },
                 {
                   "kind": "paragraph"
@@ -26654,7 +26794,7 @@
             },
             "load": {
               "kind": "method",
-              "signature": "load(option?: string | string[]): Word.SectionCollection;",
+              "signature": "load(option?: Word.Interfaces.SectionCollectionLoadOptions & Word.Interfaces.CollectionLoadOptions): Word.SectionCollection;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -26673,7 +26813,7 @@
                   ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "string | string[]"
+                  "type": "Word.Interfaces.SectionCollectionLoadOptions & Word.Interfaces.CollectionLoadOptions"
                 }
               },
               "deprecatedMessage": [],
@@ -26687,6 +26827,13 @@
                 {
                   "kind": "text",
                   "text": "In addition to this signature, this method has the following signatures:"
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "`load(option?: string | string[]): Word.SectionCollection` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load."
                 },
                 {
                   "kind": "paragraph"
@@ -29207,7 +29354,7 @@
             },
             "load": {
               "kind": "method",
-              "signature": "load(option?: string | string[]): Word.Table;",
+              "signature": "load(option?: Word.Interfaces.TableLoadOptions): Word.Table;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -29226,7 +29373,7 @@
                   ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "string | string[]"
+                  "type": "Word.Interfaces.TableLoadOptions"
                 }
               },
               "deprecatedMessage": [],
@@ -29240,6 +29387,13 @@
                 {
                   "kind": "text",
                   "text": "In addition to this signature, this method has the following signatures:"
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "`load(option?: string | string[]): Word.Table` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load."
                 },
                 {
                   "kind": "paragraph"
@@ -30155,7 +30309,7 @@
             },
             "load": {
               "kind": "method",
-              "signature": "load(option?: string | string[]): Word.TableBorder;",
+              "signature": "load(option?: Word.Interfaces.TableBorderLoadOptions): Word.TableBorder;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -30174,7 +30328,7 @@
                   ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "string | string[]"
+                  "type": "Word.Interfaces.TableBorderLoadOptions"
                 }
               },
               "deprecatedMessage": [],
@@ -30188,6 +30342,13 @@
                 {
                   "kind": "text",
                   "text": "In addition to this signature, this method has the following signatures:"
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "`load(option?: string | string[]): Word.TableBorder` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load."
                 },
                 {
                   "kind": "paragraph"
@@ -30819,7 +30980,7 @@
             },
             "load": {
               "kind": "method",
-              "signature": "load(option?: string | string[]): Word.TableCell;",
+              "signature": "load(option?: Word.Interfaces.TableCellLoadOptions): Word.TableCell;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -30838,7 +30999,7 @@
                   ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "string | string[]"
+                  "type": "Word.Interfaces.TableCellLoadOptions"
                 }
               },
               "deprecatedMessage": [],
@@ -30852,6 +31013,13 @@
                 {
                   "kind": "text",
                   "text": "In addition to this signature, this method has the following signatures:"
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "`load(option?: string | string[]): Word.TableCell` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load."
                 },
                 {
                   "kind": "paragraph"
@@ -31302,7 +31470,7 @@
             },
             "load": {
               "kind": "method",
-              "signature": "load(option?: string | string[]): Word.TableCellCollection;",
+              "signature": "load(option?: Word.Interfaces.TableCellCollectionLoadOptions & Word.Interfaces.CollectionLoadOptions): Word.TableCellCollection;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -31321,7 +31489,7 @@
                   ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "string | string[]"
+                  "type": "Word.Interfaces.TableCellCollectionLoadOptions & Word.Interfaces.CollectionLoadOptions"
                 }
               },
               "deprecatedMessage": [],
@@ -31335,6 +31503,13 @@
                 {
                   "kind": "text",
                   "text": "In addition to this signature, this method has the following signatures:"
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "`load(option?: string | string[]): Word.TableCellCollection` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load."
                 },
                 {
                   "kind": "paragraph"
@@ -31533,7 +31708,7 @@
             },
             "load": {
               "kind": "method",
-              "signature": "load(option?: string | string[]): Word.TableCollection;",
+              "signature": "load(option?: Word.Interfaces.TableCollectionLoadOptions & Word.Interfaces.CollectionLoadOptions): Word.TableCollection;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -31552,7 +31727,7 @@
                   ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "string | string[]"
+                  "type": "Word.Interfaces.TableCollectionLoadOptions & Word.Interfaces.CollectionLoadOptions"
                 }
               },
               "deprecatedMessage": [],
@@ -31566,6 +31741,13 @@
                 {
                   "kind": "text",
                   "text": "In addition to this signature, this method has the following signatures:"
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "`load(option?: string | string[]): Word.TableCollection` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load."
                 },
                 {
                   "kind": "paragraph"
@@ -32101,7 +32283,7 @@
             },
             "load": {
               "kind": "method",
-              "signature": "load(option?: string | string[]): Word.TableRow;",
+              "signature": "load(option?: Word.Interfaces.TableRowLoadOptions): Word.TableRow;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -32120,7 +32302,7 @@
                   ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "string | string[]"
+                  "type": "Word.Interfaces.TableRowLoadOptions"
                 }
               },
               "deprecatedMessage": [],
@@ -32134,6 +32316,13 @@
                 {
                   "kind": "text",
                   "text": "In addition to this signature, this method has the following signatures:"
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "`load(option?: string | string[]): Word.TableRow` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load."
                 },
                 {
                   "kind": "paragraph"
@@ -32656,7 +32845,7 @@
             },
             "load": {
               "kind": "method",
-              "signature": "load(option?: string | string[]): Word.TableRowCollection;",
+              "signature": "load(option?: Word.Interfaces.TableRowCollectionLoadOptions & Word.Interfaces.CollectionLoadOptions): Word.TableRowCollection;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -32675,7 +32864,7 @@
                   ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "string | string[]"
+                  "type": "Word.Interfaces.TableRowCollectionLoadOptions & Word.Interfaces.CollectionLoadOptions"
                 }
               },
               "deprecatedMessage": [],
@@ -32689,6 +32878,13 @@
                 {
                   "kind": "text",
                   "text": "In addition to this signature, this method has the following signatures:"
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "`load(option?: string | string[]): Word.TableRowCollection` - Where option is a comma-delimited string or an array of strings that specify the properties/relationships to load."
                 },
                 {
                   "kind": "paragraph"

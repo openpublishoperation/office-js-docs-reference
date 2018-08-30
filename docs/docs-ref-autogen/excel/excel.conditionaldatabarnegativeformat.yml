@@ -62,6 +62,10 @@ items:
       In addition to this signature, this method has the following signatures:
 
 
+      `load(option?: string | string[]): Excel.ConditionalDataBarNegativeFormat` - Where option is a comma-delimited
+      string or an array of strings that specify the properties/relationships to load.
+
+
       `load(option?: { select?: string; expand?: string; }): Excel.ConditionalDataBarNegativeFormat` - Where
       option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand
       is a comma-delimited string that specifies the relationships to load.
@@ -78,7 +82,9 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: string | string[]): Excel.ConditionalDataBarNegativeFormat;'
+      content: >-
+        load(option?: Excel.Interfaces.ConditionalDataBarNegativeFormatLoadOptions):
+        Excel.ConditionalDataBarNegativeFormat;
       return:
         type:
           - excel.Excel.ConditionalDataBarNegativeFormat
@@ -87,7 +93,7 @@ items:
         - id: option
           description: A comma-delimited string or an array of strings that specify the properties/relationships to load.
           type:
-            - 'string | string[]'
+            - Excel.Interfaces.ConditionalDataBarNegativeFormatLoadOptions
   - uid: excel.Excel.ConditionalDataBarNegativeFormat.matchPositiveBorderColor
     summary: |-
       Boolean representation of whether or not the negative DataBar has the same border color as the positive DataBar.

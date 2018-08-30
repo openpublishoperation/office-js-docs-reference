@@ -58,6 +58,10 @@ items:
       In addition to this signature, this method has the following signatures:
 
 
+      `load(option?: string | string[]): OneNote.InkStroke` - Where option is a comma-delimited string or an array of
+      strings that specify the properties/relationships to load.
+
+
       `load(option?: { select?: string; expand?: string; }): OneNote.InkStroke` - Where option.select is a
       comma-delimited string that specifies the properties/relationships to load, and options.expand is a
       comma-delimited string that specifies the relationships to load.
@@ -74,7 +78,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: string | string[]): OneNote.InkStroke;'
+      content: 'load(option?: OneNote.Interfaces.InkStrokeLoadOptions): OneNote.InkStroke;'
       return:
         type:
           - onenote.OneNote.InkStroke
@@ -83,7 +87,7 @@ items:
         - id: option
           description: A comma-delimited string or an array of strings that specify the properties/relationships to load.
           type:
-            - 'string | string[]'
+            - OneNote.Interfaces.InkStrokeLoadOptions
   - uid: onenote.OneNote.InkStroke.toJSON
     name: toJSON()
     fullName: onenote.OneNote.InkStroke.toJSON

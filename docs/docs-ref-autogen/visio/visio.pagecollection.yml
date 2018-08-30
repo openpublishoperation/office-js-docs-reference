@@ -92,6 +92,10 @@ items:
       In addition to this signature, this method has the following signatures:
 
 
+      `load(option?: string | string[]): Visio.PageCollection` - Where option is a comma-delimited string or an array of
+      strings that specify the properties/relationships to load.
+
+
       `load(option?: { select?: string; expand?: string; }): Visio.PageCollection` - Where option.select is a
       comma-delimited string that specifies the properties/relationships to load, and options.expand is a
       comma-delimited string that specifies the relationships to load.
@@ -108,7 +112,9 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: string | string[]): Visio.PageCollection;'
+      content: >-
+        load(option?: Visio.Interfaces.PageCollectionLoadOptions & Visio.Interfaces.CollectionLoadOptions):
+        Visio.PageCollection;
       return:
         type:
           - Visio.PageCollection
@@ -117,7 +123,7 @@ items:
         - id: option
           description: A comma-delimited string or an array of strings that specify the properties/relationships to load.
           type:
-            - 'string | string[]'
+            - Visio.Interfaces.PageCollectionLoadOptions & Visio.Interfaces.CollectionLoadOptions
   - uid: visio.Visio.PageCollection.toJSON
     name: toJSON()
     fullName: visio.Visio.PageCollection.toJSON

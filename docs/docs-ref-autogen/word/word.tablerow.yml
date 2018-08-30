@@ -263,6 +263,10 @@ items:
       In addition to this signature, this method has the following signatures:
 
 
+      `load(option?: string | string[]): Word.TableRow` - Where option is a comma-delimited string or an array of
+      strings that specify the properties/relationships to load.
+
+
       `load(option?: { select?: string; expand?: string; }): Word.TableRow` - Where option.select is a comma-delimited
       string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that
       specifies the relationships to load.
@@ -279,7 +283,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: string | string[]): Word.TableRow;'
+      content: 'load(option?: Word.Interfaces.TableRowLoadOptions): Word.TableRow;'
       return:
         type:
           - Word.TableRow
@@ -288,7 +292,7 @@ items:
         - id: option
           description: A comma-delimited string or an array of strings that specify the properties/relationships to load.
           type:
-            - 'string | string[]'
+            - Word.Interfaces.TableRowLoadOptions
   - uid: word.Word.TableRow.parentTable
     summary: |-
       Gets parent table. Read-only.

@@ -227,6 +227,10 @@ items:
       In addition to this signature, this method has the following signatures:
 
 
+      `load(option?: string | string[]): Excel.CustomXmlPartCollection` - Where option is a comma-delimited string or an
+      array of strings that specify the properties/relationships to load.
+
+
       `load(option?: { select?: string; expand?: string; }): Excel.CustomXmlPartCollection` - Where option.select is a
       comma-delimited string that specifies the properties/relationships to load, and options.expand is a
       comma-delimited string that specifies the relationships to load.
@@ -243,7 +247,9 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: string | string[]): Excel.CustomXmlPartCollection;'
+      content: >-
+        load(option?: Excel.Interfaces.CustomXmlPartCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions):
+        Excel.CustomXmlPartCollection;
       return:
         type:
           - excel.Excel.CustomXmlPartCollection
@@ -252,7 +258,7 @@ items:
         - id: option
           description: A comma-delimited string or an array of strings that specify the properties/relationships to load.
           type:
-            - 'string | string[]'
+            - Excel.Interfaces.CustomXmlPartCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions
   - uid: excel.Excel.CustomXmlPartCollection.toJSON
     name: toJSON()
     fullName: excel.Excel.CustomXmlPartCollection.toJSON

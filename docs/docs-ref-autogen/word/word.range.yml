@@ -1034,6 +1034,10 @@ items:
       In addition to this signature, this method has the following signatures:
 
 
+      `load(option?: string | string[]): Word.Range` - Where option is a comma-delimited string or an array of strings
+      that specify the properties/relationships to load.
+
+
       `load(option?: { select?: string; expand?: string; }): Word.Range` - Where option.select is a comma-delimited
       string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that
       specifies the relationships to load.
@@ -1050,7 +1054,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: string | string[]): Word.Range;'
+      content: 'load(option?: Word.Interfaces.RangeLoadOptions): Word.Range;'
       return:
         type:
           - Word.Range
@@ -1059,7 +1063,7 @@ items:
         - id: option
           description: A comma-delimited string or an array of strings that specify the properties/relationships to load.
           type:
-            - 'string | string[]'
+            - Word.Interfaces.RangeLoadOptions
   - uid: word.Word.Range.paragraphs
     summary: |-
       Gets the collection of paragraph objects in the range. Read-only.

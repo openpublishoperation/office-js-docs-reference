@@ -163,6 +163,10 @@ items:
       In addition to this signature, this method has the following signatures:
 
 
+      `load(option?: string | string[]): OneNote.PageCollection` - Where option is a comma-delimited string or an array
+      of strings that specify the properties/relationships to load.
+
+
       `load(option?: { select?: string; expand?: string; }): OneNote.PageCollection` - Where option.select is a
       comma-delimited string that specifies the properties/relationships to load, and options.expand is a
       comma-delimited string that specifies the relationships to load.
@@ -213,7 +217,9 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: string | string[]): OneNote.PageCollection;'
+      content: >-
+        load(option?: OneNote.Interfaces.PageCollectionLoadOptions & OneNote.Interfaces.CollectionLoadOptions):
+        OneNote.PageCollection;
       return:
         type:
           - onenote.OneNote.PageCollection
@@ -222,7 +228,7 @@ items:
         - id: option
           description: A comma-delimited string or an array of strings that specify the properties/relationships to load.
           type:
-            - 'string | string[]'
+            - OneNote.Interfaces.PageCollectionLoadOptions & OneNote.Interfaces.CollectionLoadOptions
   - uid: onenote.OneNote.PageCollection.toJSON
     name: toJSON()
     fullName: onenote.OneNote.PageCollection.toJSON
