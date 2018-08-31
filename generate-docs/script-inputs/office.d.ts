@@ -17210,35 +17210,126 @@ declare namespace OfficeRuntime {
     const AsyncStorage: AsyncStorage;
   
     // tslint:disable-next-line:interface-name
-    interface AsyncStorage {
+       /**
+       * Asynchronous, global, and persistent key-value storage for Excel Custom Functions only.
+       *
+       * @remarks 
+       * Each add-in instance has its own storage partition, unique to a user and their device. 
+       * 
+       * The default amount of total storage allowed per add-in is 5MB. 
+       * 
+       * Each method listed below returns a Promise object. 
+       * 
+       */
+      interface AsyncStorage {
+      /**
+       *
+       * Retrieves an object based on a key and invokes a callback when finished. Returns a Promise. 
+       *   
+       * @param key Key pertaining to item. Required parameter. 
+       * 
+       * @param callback Optional parameter.
+       */
       getItem(key: string, callback?: (error?: Error, result?: string) => void): Promise<string>;
+       /**
+       *
+       * Assigns the value for a key-value pair and invokes a callback when finished. Returns a Promise.  
+       * 
+       * @param key Key pertaining to item. Required parameter. 
+       * 
+       * @param callback Optional parameter.
+       *
+       */
       setItem(key: string, value: string, callback?: (error?: Error) => void): Promise<void>;
+      /**
+       *
+       * Removes an item for specified key and invokes a callback when finished. Returns a Promise. 
+       *  
+       * @param key Key pertaining to item. Required parameter. 
+       * 
+       * @param callback Optional parameter.
+       *
+       */
       removeItem(key: string, callback?: (error?: Error) => void): Promise<void>;
+      /**
+       *
+       * Erases all AsyncStorage. Returns a Promise. 
+       * 
+       * @param callback Optional parameter.
+       *
+       */
       clear(callback?: (error?: Error) => void): Promise<void>;
+       /**
+       *
+       * Returns a Promise with all keys for your custom function. 
+       * 
+       * @param keys Keys pertaining to items. Required parameter. 
+       * 
+       * @param callback Optional parameter.
+       *
+       */
       getAllKeys(callback?: (error?: Error, keys?: string[]) => void): Promise<string[]>;
+       /**
+       *
+       * Stores multiple key-value pairs in one batch. Returns a Promise.
+       * 
+       * @param keyValuePairs Array of key-value pairs. Required parameter. 
+       * 
+       * @param callback Optional parameter.
+       *
+       */
       multiSet(keyValuePairs: string[][], callback?: (errors?: Error[]) => void): Promise<void>;
-      multiRemove(keys: string[], callback?: (errors?: Error[]) => void): Promise<void>;
+       /**
+       *
+       * Deletes a batch of keys, specified in the `keys` array. 
+       * 
+       * @param keys Array of keys pertaining to items. Required parameter. 
+       * 
+       * @param callback Optional parameter.
+       *
+       */
+      multiRemove(keys: string[], callback?: (errors?: Error[]) => void): Promise<void>;/**
+      /**
+      * Fetches a batch of keys, specified in the `keys` array. 
+      * 
+      * @param keys Array of keys pertaining to items. Required parameter. 
+      * 
+      * @param callback Optional parameter. Note that the returned result will be a key-value array and an array of errors specific to particular keys. 
+      *
+      */
       multiGet(keys: string[], callback?: (errors?: Error[], result?: string[][]) => void): Promise<string[][]>;
     }
   
+    /**
+    *
+    * Object representing the dialog box for Excel Custom Functions only. 
+    *
+    */
     interface Dialog {
+       /**
+       *
+       * Method that closes a dialog box. 
+       */
       close(): Promise<void>;
     }
   
     // (copied from richapi/office-dialog/src/dialog.ts)
+      /**
+       *
+       * Provides options for how a dialog is displayed for Excel Custom Functions only. 
+       *
+       */
     interface DisplayWebDialogOptions {
       /**
        *
-       * True if dialog opens in IFRAME
+       * Determines whether the dialog box displays as a popup (false) or within an IFrame (true). This setting is only applicable to custom functions running on Excel Online. 
        *
        * [Api set: Dialog 1.2]
        */
       displayInIFrame?: boolean;
       /**
        *
-       * The height of dialog as a percentage of window
-       *
-       * ex. '50%', '50'
+       * Defines the height of the dialog box as a percentage of the current display.
        *
        * [Api set: Dialog 1.2]
        */
@@ -17246,9 +17337,7 @@ declare namespace OfficeRuntime {
   
       /**
        *
-       * The width of dialog as a percentage of window
-       *
-       * ex. '50%', '50'
+       * Defines the width of the dialog box as a percentage of the current display. 
        *
        * [Api set: Dialog 1.2]
        */
@@ -17256,7 +17345,7 @@ declare namespace OfficeRuntime {
   
       /**
        *
-       * True if title is hidden
+       * True if title is hidden from the dialog box. 
        *
        * [Api set: Dialog 1.2]
        */
@@ -17264,7 +17353,7 @@ declare namespace OfficeRuntime {
   
       /**
        *
-       * Callback that is run when the dialog sends a message to its parent
+       * Callback that is run when the dialog box sends a message to its parent.
        *
        * [Api set: Dialog 1.X]
        */
@@ -17272,7 +17361,7 @@ declare namespace OfficeRuntime {
   
       /**
        *
-       * Callback that is run when the dialog is closed
+       * Callback that is run when the dialog box is closed.
        *
        * [Api set: Dialog 1.X]
        */
@@ -17280,7 +17369,7 @@ declare namespace OfficeRuntime {
   
       /**
        *
-       * Callback that is run when the dialog sends an error
+       * Callback that is run when the dialog box sends an error.
        *
        * [Api set: Dialog 1.X]
        */
